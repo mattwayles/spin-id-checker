@@ -76,7 +76,7 @@ def fetch_winning_spin_ids(url=URL):
     return parser.spin_ids
 
 
-def send_notification(matches):
+def send_notification(winning_ids, matches):
     """Push the day's outcome to the ntfy.sh topic named in NTFY_TOPIC.
 
     The topic name acts as a shared secret, so it comes from the
@@ -101,7 +101,10 @@ def send_notification(matches):
             "Tags": "rotating_light,tada,moneybag,partying_face",
         }
     else:
-        message = "Your Spin ID did not win today's drawing :("
+        message = (
+            "Your Spin ID did not win today's drawing :( "
+            f"- the winning ID was {', '.join(winning_ids)}"
+        )
         headers = {
             "Title": "Wheel of Fortune Spin ID check",
             "Priority": "low",
@@ -154,7 +157,7 @@ def main():
     if args.log:
         append_log(args.log, winning_ids, matches)
 
-    send_notification(matches)
+    send_notification(winning_ids, matches)
 
 
 if __name__ == "__main__":
