@@ -11,9 +11,10 @@ Usage:
 With --log, appends a one-line entry (timestamp, winning IDs, outcome)
 to FILE for historical tracking.
 
-On a win, sends a push notification via ntfy.sh if the NTFY_TOPIC
-environment variable is set (subscribe to the same topic in the ntfy
-phone app to receive it).
+Sends a push notification with the outcome via ntfy.sh if the
+NTFY_TOPIC environment variable is set (subscribe to the same topic in
+the ntfy phone app to receive it): a quiet daily heartbeat on a loss,
+an urgent celebration on a win.
 """
 
 import argparse
@@ -75,32 +76,48 @@ def fetch_winning_spin_ids(url=URL):
     return parser.spin_ids
 
 
-def send_win_notification(matches):
-    """Push a win alert to the ntfy.sh topic named in NTFY_TOPIC.
+def send_notification(matches):
+    """Push the day's outcome to the ntfy.sh topic named in NTFY_TOPIC.
 
     The topic name acts as a shared secret, so it comes from the
     environment (a GitHub Actions secret) rather than the source.
+    HTTP headers only allow ASCII, so emojis live in the body and in
+    ntfy's emoji-shortcode Tags header.
     """
     topic = os.environ.get("NTFY_TOPIC")
     if not topic:
-        print("NTFY_TOPIC not set; skipping win notification.", file=sys.stderr)
+        print("NTFY_TOPIC not set; skipping notification.", file=sys.stderr)
         return
-    message = f"Winner! Winning ID: {', '.join(matches)}"
+    if matches:
+        message = (
+            "\U0001f6a8\U0001f389 HOLY CRAP, SPIN ID "
+            f"{', '.join(matches)}"
+            " ACTUALLY WON TODAY'S WHEEL OF FORTUNE SPIN ID DRAWING! "
+            "\U0001f389\U0001f4b0\U0001f525\U0001f973"
+        )
+        headers = {
+            "Title": "!!! WHEEL OF FORTUNE SPIN ID WINNER !!!",
+            "Priority": "urgent",
+            "Tags": "rotating_light,tada,moneybag,partying_face",
+        }
+    else:
+        message = "Your Spin ID did not win today's drawing :("
+        headers = {
+            "Title": "Wheel of Fortune Spin ID check",
+            "Priority": "low",
+            "Tags": "shrug",
+        }
     request = urllib.request.Request(
         f"https://ntfy.sh/{topic}",
         data=message.encode("utf-8"),
-        headers={
-            "Title": "Wheel of Fortune Spin ID WIN!",
-            "Priority": "high",
-            "Tags": "tada",
-        },
+        headers=headers,
         method="POST",
     )
     try:
         urllib.request.urlopen(request, timeout=30)
-        print("Win notification sent.")
+        print("Notification sent.")
     except Exception as error:
-        print(f"Failed to send win notification: {error}", file=sys.stderr)
+        print(f"Failed to send notification: {error}", file=sys.stderr)
 
 
 def append_log(log_path, winning_ids, matches):
@@ -137,8 +154,7 @@ def main():
     if args.log:
         append_log(args.log, winning_ids, matches)
 
-    if matches:
-        send_win_notification(matches)
+    send_notification(matches)
 
 
 if __name__ == "__main__":
