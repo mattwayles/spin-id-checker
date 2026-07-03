@@ -17,6 +17,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run spin ID check
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python3 check_spin_id.py --log spin_log.txt
 
       - name: Commit log entry

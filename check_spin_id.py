@@ -10,9 +10,14 @@ Usage:
 
 With --log, appends a one-line entry (timestamp, winning IDs, outcome)
 to FILE for historical tracking.
+
+On a win, sends a push notification via ntfy.sh if the NTFY_TOPIC
+environment variable is set (subscribe to the same topic in the ntfy
+phone app to receive it).
 """
 
 import argparse
+import os
 import sys
 import urllib.request
 from datetime import datetime, timezone
@@ -70,6 +75,34 @@ def fetch_winning_spin_ids(url=URL):
     return parser.spin_ids
 
 
+def send_win_notification(matches):
+    """Push a win alert to the ntfy.sh topic named in NTFY_TOPIC.
+
+    The topic name acts as a shared secret, so it comes from the
+    environment (a GitHub Actions secret) rather than the source.
+    """
+    topic = os.environ.get("NTFY_TOPIC")
+    if not topic:
+        print("NTFY_TOPIC not set; skipping win notification.", file=sys.stderr)
+        return
+    message = f"Winner! Winning ID: {', '.join(matches)}"
+    request = urllib.request.Request(
+        f"https://ntfy.sh/{topic}",
+        data=message.encode("utf-8"),
+        headers={
+            "Title": "Wheel of Fortune Spin ID WIN!",
+            "Priority": "high",
+            "Tags": "tada",
+        },
+        method="POST",
+    )
+    try:
+        urllib.request.urlopen(request, timeout=30)
+        print("Win notification sent.")
+    except Exception as error:
+        print(f"Failed to send win notification: {error}", file=sys.stderr)
+
+
 def append_log(log_path, winning_ids, matches):
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     outcome = f"WIN ({','.join(matches)})" if matches else "no-win"
@@ -103,6 +136,9 @@ def main():
 
     if args.log:
         append_log(args.log, winning_ids, matches)
+
+    if matches:
+        send_win_notification(matches)
 
 
 if __name__ == "__main__":
