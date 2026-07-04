@@ -100,9 +100,16 @@ def send_notification(winning_ids, matches):
             "Priority": "urgent",
             "Tags": "rotating_light,tada,moneybag,partying_face",
         }
+    elif not winning_ids:
+        message = "No winning spin ID was published today."
+        headers = {
+            "Title": "Wheel of Fortune Spin ID check",
+            "Priority": "low",
+            "Tags": "shrug",
+        }
     else:
         message = (
-            "Your Spin ID did not win today's drawing :( "
+            "Your Spin ID did not win today's drawing \U0001f622 "
             f"- the winning ID was {', '.join(winning_ids)}"
         )
         headers = {
@@ -125,10 +132,16 @@ def send_notification(winning_ids, matches):
 
 def append_log(log_path, winning_ids, matches):
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    outcome = f"WIN ({','.join(matches)})" if matches else "no-win"
+    if matches:
+        outcome = f"WIN ({','.join(matches)})"
+    elif not winning_ids:
+        outcome = "no-id-published"
+    else:
+        outcome = "no-win"
+    winning_id_str = ",".join(winning_ids) if winning_ids else "(none)"
     with open(log_path, "a") as log_file:
         log_file.write(
-            f"{timestamp}  winning_id={','.join(winning_ids)}  result={outcome}\n"
+            f"{timestamp}  winning_id={winning_id_str}  result={outcome}\n"
         )
 
 
@@ -143,12 +156,10 @@ def main():
         print(f"Error fetching spin ID page: {error}", file=sys.stderr)
         sys.exit(1)
 
-    if not winning_ids:
-        print("No spin ID found on the page.", file=sys.stderr)
-        sys.exit(1)
-
     matches = [spin_id for spin_id in MY_SPIN_IDS if spin_id in winning_ids]
-    if matches:
+    if not winning_ids:
+        print("No winning spin ID was published today.")
+    elif matches:
         for winning_id in matches:
             print(f"Winner! Winning ID: {winning_id}")
     else:

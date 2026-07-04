@@ -2,9 +2,9 @@ name: Daily Spin ID Check
 
 on:
   schedule:
-    # 14:00 UTC daily (~10am ET). GitHub may delay scheduled runs by
+    # 16:00 UTC daily (~12pm ET). GitHub may delay scheduled runs by
     # several minutes during busy periods.
-    - cron: "0 14 * * *"
+    - cron: "0 16 * * *"
   workflow_dispatch:
 
 permissions:
