@@ -1,4 +1,4 @@
-# automation-monorepo
+# automations
 
 A collection of small, independent automations, each living in its own top-level directory with its own GitHub Actions workflow.
 
