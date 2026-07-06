@@ -1,43 +1,17 @@
-# spin-id-checker
+# automation-monorepo
 
-Checks whether one of my Wheel of Fortune Spin IDs won today's drawing — automatically, every day, with a push notification either way.
+A collection of small, independent automations, each living in its own top-level directory with its own GitHub Actions workflow.
 
-## How it works
+## Packages
 
-[`check_spin_id.py`](check_spin_id.py) (Python 3, standard library only):
+- [`spin-id-checker/`](spin-id-checker/) — checks whether a Wheel of Fortune Spin ID has won today's drawing, on a daily schedule, with a push notification either way.
 
-1. Fetches the current winning Spin ID from [wheeloffortunesolutions.com/spinid.html](http://www.wheeloffortunesolutions.com/spinid.html).
-2. Extracts the value(s) from `<td class="TableSpinID">` cells using a real HTML parser — the page keeps old winning IDs inside HTML comments, so a plain text search would false-match.
-3. Compares them against the hard-coded `MY_SPIN_IDS` list.
-4. Prints the result, optionally appends it to a log file, and sends a push notification via [ntfy.sh](https://ntfy.sh):
-   - **No win:** a quiet, low-priority daily heartbeat — proof the script is still running.
-   - **Win:** an urgent, emoji-laden alert that's hard to miss.
+## Layout conventions
 
-## Automation
+Each package is self-contained: its own README, its own dependencies (if any), its own log/state files. GitHub Actions requires workflow files to live under the shared [`.github/workflows/`](.github/workflows/) directory at the repo root, but each workflow scopes itself to one package via `working-directory` and its own trigger/schedule — packages don't share runtime state or secrets unless a workflow explicitly does so.
 
-A GitHub Actions workflow ([`.github/workflows/spin-check.yml`](.github/workflows/spin-check.yml)) runs the check daily at 14:00 UTC (~10am ET) and commits the result to [`spin_log.txt`](spin_log.txt), building a permanent history of every run:
+To add a new automation:
 
-```
-2026-07-03T19:34:07Z  winning_id=RL3853004  result=no-win
-```
-
-It can also be triggered manually from the **Actions** tab (**Daily Spin ID Check → Run workflow**).
-
-## Running locally
-
-```sh
-python3 check_spin_id.py                     # print the result
-python3 check_spin_id.py --log spin_log.txt  # ...and append it to the log
-```
-
-No dependencies to install.
-
-## Notifications setup
-
-The ntfy topic name acts as a shared secret, so it is not stored in this repo:
-
-1. Invent a hard-to-guess topic name (treat it like a password).
-2. Subscribe to that topic in the [ntfy app](https://ntfy.sh/) on your phone.
-3. Add it as a GitHub Actions secret named `NTFY_TOPIC` (repo → Settings → Secrets and variables → Actions).
-
-For local runs, set it in the environment: `NTFY_TOPIC=<topic> python3 check_spin_id.py`. If unset, notifications are skipped and everything else still works.
+1. Create a new top-level directory for it.
+2. Add a workflow file under `.github/workflows/` that sets `working-directory` (or `cd`s) into that directory.
+3. Give the package its own README describing what it does and how to run it locally.

@@ -13,6 +13,9 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: spin-id-checker
     steps:
       - uses: actions/checkout@v4
 
