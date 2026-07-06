@@ -1,5 +1,5 @@
 # Nuvio watchlist backup — profile 1: Datt
-# Last synced: 2026-07-06T22:46:31Z
+# Last synced: 2026-07-06T23:10:15Z
 # content_id	content_type	name
 tt31938062	series	The Pitt
 tt8772296	series	Euphoria
