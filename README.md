@@ -5,6 +5,7 @@ A collection of small, independent automations, each living in its own top-level
 ## Packages
 
 - [`wof-spin-id-check/`](wof-spin-id-check/) — checks whether a Wheel of Fortune Spin ID has won today's drawing, on a daily schedule, with a push notification either way.
+- [`nuvio-watchlist-sync/`](nuvio-watchlist-sync/) — backs up the Nuvio watchlist of every profile on the account into committed text files, on a weekly schedule.
 
 ## Layout conventions
 
