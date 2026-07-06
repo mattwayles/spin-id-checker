@@ -27,11 +27,25 @@ jobs:
           NUVIO_PASSWORD: ${{ secrets.NUVIO_PASSWORD }}
         run: python3 backup_watchlists.py
 
+      - name: Generate recommendations
+        # Recommendations are best-effort: a TMDB hiccup should not
+        # block the watchlist backup from being committed.
+        continue-on-error: true
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          if [ -z "$TMDB_API_KEY" ]; then
+            echo "TMDB_API_KEY secret not set; skipping recommendations."
+          else
+            python3 generate_recommendations.py
+          fi
+
       - name: Commit backup changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add watchlists
+          if [ -f recommendations.txt ]; then git add recommendations.txt; fi
           git diff --cached --quiet || git commit -m "Nuvio watchlist sync: $(date -u +%F)"
           # The checkout can be behind origin/master (re-runs pin the
           # trigger-time SHA; another workflow may have pushed since),
