@@ -4,9 +4,9 @@
 Signs in to the Nuvio Cloud API (Supabase-backed) with the account
 email/password, lists all profiles, pulls each profile's library (the
 app's watchlist of bookmarked items), and mirrors it into one text file
-per profile under the output directory:
+per profile under the output directory, named after the profile:
 
-    watchlists/profile-1.txt, watchlists/profile-2.txt, ...
+    watchlists/profile-datt.txt, watchlists/profile-danielle.txt, ...
 
 Each file starts with a comment header (profile name and a "Last
 synced" UTC timestamp) followed by one item per line as tab-separated
@@ -18,7 +18,9 @@ The merge is incremental so git diffs stay minimal: items already in
 the backup keep their existing line and position, new items are
 appended in the order they were added to the watchlist, and items no
 longer on the watchlist are dropped. Files for profiles that no longer
-exist on the account are deleted.
+exist on the account are deleted. Files are matched to profiles by the
+profile index recorded in their header, so renaming a profile renames
+its backup file without losing history.
 
 Usage:
     NUVIO_EMAIL=... NUVIO_PASSWORD=... python3 backup_watchlists.py [--out-dir DIR]
@@ -46,7 +48,12 @@ PUBLISHABLE_KEY = os.environ.get(
 
 PAGE_SIZE = 500
 
-PROFILE_FILE_RE = re.compile(r"^profile-(\d+)\.txt$")
+HEADER_INDEX_RE = re.compile(r"^# Nuvio watchlist backup — profile (\d+):")
+
+
+def slugify(name):
+    slug = re.sub(r"[^a-z0-9]+", "-", name.strip().lower()).strip("-")
+    return slug or "unnamed"
 
 
 def post_json(url, payload, token=None):
@@ -157,12 +164,30 @@ def write_backup(path, profile, lines):
         backup_file.writelines(line + "\n" for line in lines)
 
 
-def remove_stale_profile_files(out_dir, active_indexes):
+def profile_backup_files(out_dir):
+    """Yield (path, profile_index) for each existing backup file."""
     for entry in sorted(os.listdir(out_dir)):
-        match = PROFILE_FILE_RE.match(entry)
-        if match and int(match.group(1)) not in active_indexes:
-            os.remove(os.path.join(out_dir, entry))
-            print(f"Removed backup for deleted profile: {entry}")
+        if not (entry.startswith("profile-") and entry.endswith(".txt")):
+            continue
+        path = os.path.join(out_dir, entry)
+        with open(path) as backup_file:
+            match = HEADER_INDEX_RE.match(backup_file.readline())
+        if match:
+            yield path, int(match.group(1))
+
+
+def find_existing_file(out_dir, profile_index):
+    for path, index in profile_backup_files(out_dir):
+        if index == profile_index:
+            return path
+    return None
+
+
+def remove_stale_profile_files(out_dir, active_indexes):
+    for path, index in profile_backup_files(out_dir):
+        if index not in active_indexes:
+            os.remove(path)
+            print(f"Removed backup for deleted profile: {os.path.basename(path)}")
 
 
 def main():
@@ -194,9 +219,14 @@ def main():
     for profile in sorted(profiles, key=lambda p: p["profile_index"]):
         index = profile["profile_index"]
         items = fetch_watchlist(token, index)
-        path = os.path.join(args.out_dir, f"profile-{index}.txt")
-        lines, added, removed = merge_backup(read_backup_lines(path), items)
-        write_backup(path, profile, lines)
+        old_path = find_existing_file(args.out_dir, index)
+        new_path = os.path.join(
+            args.out_dir, f"profile-{slugify(clean_field(profile.get('name')))}.txt"
+        )
+        lines, added, removed = merge_backup(read_backup_lines(old_path), items)
+        write_backup(new_path, profile, lines)
+        if old_path and old_path != new_path:
+            os.remove(old_path)
         print(
             f"Profile {index} ({clean_field(profile.get('name'))}): "
             f"{len(lines)} items ({added} added, {removed} removed)"

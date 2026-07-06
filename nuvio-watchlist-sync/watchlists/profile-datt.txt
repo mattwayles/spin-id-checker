@@ -1,0 +1,89 @@
+# Nuvio watchlist backup — profile 1: Datt
+# Last synced: 2026-07-06T18:25:22Z
+# content_id	content_type	name
+tt31938062	series	The Pitt
+tt8772296	series	Euphoria
+tt30459041	series	Your Friends & Neighbors
+tt35946742	series	Maximum Pleasure Guaranteed
+tt32420734	series	Rooster
+tt34771210	series	I Will Find You
+tt4357198	movie	How to Make a Killing
+tt12042730	movie	Project Hail Mary
+tt1341338	movie	Good Luck, Have Fun, Don't Die
+tt34685692	movie	Over Your Dead Body
+tt8036976	movie	Send Help
+tt30144839	movie	One Battle After Another
+tt32430579	movie	Crime 101
+tt0138510	movie	Idle Hands
+tt34459219	movie	The Breadwinner
+tt28083456	movie	Is This Thing On?
+tt34385331	series	DTF St. Louis
+tt34691775	series	It's Not Like That
+tt9257258	series	Kevin Can F**k Himself
+tt12583926	movie	Anniversary
+tt39316472	movie	Jackass: Best and Last
+tt32890033	movie	Minions & Monsters
+tt26443616	movie	Hoppers
+tt33612209	movie	The Devil Wears Prada 2
+tt29552248	movie	Swapped
+tt0110912	movie	Pulp Fiction
+tt27613895	movie	GOAT
+tt14364480	movie	Wake Up Dead Man
+tt22740896	movie	People We Meet on Vacation
+tt0120663	movie	Eyes Wide Shut
+tt0120382	movie	The Truman Show
+tt0443706	movie	Zodiac
+tt33046197	movie	The Wrecking Crew
+tt1723121	movie	We're the Millers
+tt6263850	movie	Deadpool & Wolverine
+tt0169547	movie	American Beauty
+tt14452776	series	The Bear
+tt10986410	series	Ted Lasso
+tt4574334	series	Stranger Things
+tt0413573	series	Grey's Anatomy
+tt11815682	series	Hacks
+tt2085059	series	Black Mirror
+tt15677150	series	Shrinking
+tt27444205	series	Paradise
+tt7660850	series	Succession
+tt5834204	series	The Handmaid's Tale
+tt22202452	series	Pluribus
+tt9077540	series	Sweet Magnolias
+tt31137273	series	Margo's Got Money Troubles
+tt0412142	series	House
+tt22091076	series	High Potential
+tt8690918	series	Resident Alien
+tt0460649	series	How I Met Your Mother
+tt31631015	series	The Witness
+tt0472954	series	It's Always Sunny in Philadelphia
+tt14879018	series	Running Point
+tt13875494	series	Tracker
+tt2741602	series	The Blacklist
+tt6468322	series	Money Heist
+tt33043892	series	Dexter: Resurrection
+tt11691774	series	Only Murders in the Building
+tt0455275	series	Prison Break
+tt0098904	series	Seinfeld
+tt2467372	series	Brooklyn Nine-Nine
+tt4786824	series	The Crown
+tt21376524	series	Animal Control
+tt21433690	series	St. Denis Medical
+tt0115147	series	The Daily Show
+tt34888871	movie	Little Brother
+tt40898187	movie	The Roast of Kevin Hart
+tt3469050	series	90 Day Fiancé
+tt28304310	series	90 Day: The Last Resort
+tt7252812	series	90 Day Fiancé: Before the 90 Days
+tt9170070	series	90 Day Fiancé: The Other Way
+tt13990474	series	90 Day: The Single Life
+tt6142940	series	90 Day Fiancé: Happily Ever After?
+tt14873792	series	90 Day Fiancé: Love in Paradise
+tt8718438	series	90 Day Fiancé: What Now?
+tt3868860	series	Married at First Sight
+tt4771108	series	Married at First Sight Australia
+tt14163204	series	Married at First Sight Grand Reunion Event
+tt8994550	series	Married at First Sight: Happily Ever After
+tt13087486	series	Married at First Sight: Unmatchables
+tt7942794	series	The Neighborhood
+tt29355505	movie	Toy Story 5
+tt42873612	series	Michael Jackson: The Verdict
