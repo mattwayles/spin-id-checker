@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuvio Recommendations</title>
+<meta name="description" content="Weekly movie & series recommendations built from every Nuvio profile's watchlist and watch history.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍿</text></svg>">
+<style>
+  :root {
+    --bg: #0b0d12;
+    --surface: #151823;
+    --surface-2: #1d2130;
+    --border: #262b3d;
+    --text: #e8eaf0;
+    --text-dim: #9aa1b5;
+    --accent: #6c8cff;
+    --star: #f5c518;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header {
+    padding: 40px 24px 8px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  h1 { margin: 0 0 4px; font-size: 1.7rem; letter-spacing: -0.02em; }
+  .subtitle { color: var(--text-dim); font-size: 0.9rem; margin: 0; }
+
+  .controls {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(var(--bg) 80%, transparent);
+    z-index: 5;
+  }
+  .segmented { display: flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+  .segmented button {
+    background: transparent; color: var(--text-dim); border: 0;
+    padding: 7px 16px; font-size: 0.85rem; cursor: pointer; font-family: inherit;
+  }
+  .segmented button.active { background: var(--surface-2); color: var(--text); }
+  select, input[type="search"] {
+    background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); border-radius: 999px;
+    padding: 7px 14px; font-size: 0.85rem; font-family: inherit; outline: none;
+  }
+  input[type="search"] { flex: 1; min-width: 160px; }
+  input[type="search"]:focus, select:focus { border-color: var(--accent); }
+
+  .grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 8px 24px 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px 16px;
+  }
+
+  .card {
+    background: none; border: 0; padding: 0; margin: 0;
+    font-family: inherit; color: inherit; text-align: left;
+    cursor: pointer; display: block; width: 100%;
+  }
+  .poster-wrap {
+    position: relative;
+    aspect-ratio: 2 / 3;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  .card:hover .poster-wrap, .card:focus-visible .poster-wrap {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+  .card:focus-visible { outline: none; }
+  .poster-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .poster-fallback {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem; color: var(--text-dim);
+    background: linear-gradient(160deg, var(--surface-2), var(--surface));
+    padding: 12px; text-align: center;
+  }
+  .badge {
+    position: absolute; top: 8px;
+    font-size: 0.68rem; font-weight: 600;
+    padding: 3px 8px; border-radius: 999px;
+    background: rgba(11, 13, 18, 0.82); backdrop-filter: blur(4px);
+  }
+  .badge.rank { left: 8px; color: var(--text-dim); }
+  .badge.type { right: 8px; color: var(--accent); text-transform: capitalize; }
+
+  .card-title {
+    margin: 8px 2px 0;
+    font-size: 0.9rem; font-weight: 600;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-meta { margin: 2px 2px 0; font-size: 0.78rem; color: var(--text-dim); }
+  .star { color: var(--star); }
+
+  .status {
+    max-width: 640px; margin: 80px auto; padding: 0 24px;
+    text-align: center; color: var(--text-dim);
+  }
+  .status h2 { color: var(--text); }
+  .status code { background: var(--surface); padding: 2px 6px; border-radius: 6px; }
+
+  dialog {
+    background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); border-radius: 16px;
+    padding: 0; width: min(680px, calc(100vw - 32px));
+    max-height: calc(100vh - 64px);
+  }
+  dialog::backdrop { background: rgba(0, 0, 0, 0.7); }
+  .modal-hero {
+    position: relative; aspect-ratio: 16 / 7;
+    background: var(--surface-2); overflow: hidden;
+  }
+  .modal-hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .modal-hero::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(transparent 30%, var(--surface));
+  }
+  .modal-close {
+    position: absolute; top: 12px; right: 12px; z-index: 2;
+    background: rgba(11, 13, 18, 0.82); color: var(--text);
+    border: 0; border-radius: 999px; width: 32px; height: 32px;
+    font-size: 1rem; cursor: pointer; line-height: 1;
+  }
+  .modal-body { padding: 0 24px 24px; margin-top: -48px; position: relative; }
+  .modal-head { display: flex; gap: 16px; align-items: flex-end; }
+  .modal-poster {
+    width: 110px; aspect-ratio: 2 / 3; flex: none;
+    border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border); background: var(--surface-2);
+  }
+  .modal-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .modal-head h2 { margin: 0 0 2px; font-size: 1.3rem; letter-spacing: -0.02em; }
+  .modal-sub { color: var(--text-dim); font-size: 0.85rem; margin: 0; }
+  .genre-row { margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    font-size: 0.75rem; color: var(--text-dim);
+    border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px;
+  }
+  .overview { margin: 14px 0 0; font-size: 0.92rem; color: var(--text); }
+  .because { margin: 16px 0 0; font-size: 0.82rem; color: var(--text-dim); }
+  .because strong { color: var(--text); font-weight: 600; }
+  .modal-links { margin: 18px 0 0; display: flex; gap: 10px; }
+  .modal-links a {
+    color: var(--text); text-decoration: none; font-size: 0.85rem; font-weight: 600;
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 16px;
+  }
+  .modal-links a:hover { border-color: var(--accent); }
+
+  footer {
+    max-width: 1280px; margin: 0 auto; padding: 0 24px 40px;
+    color: var(--text-dim); font-size: 0.75rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>🍿 Nuvio Recommendations</h1>
+  <p class="subtitle" id="subtitle">Loading…</p>
+</header>
+
+<div class="controls" id="controls" hidden>
+  <div class="segmented" id="typeFilter">
+    <button data-type="all" class="active">All</button>
+    <button data-type="movie">Movies</button>
+    <button data-type="series">Series</button>
+  </div>
+  <select id="sort">
+    <option value="rank">Best match</option>
+    <option value="rating">Highest rated</option>
+    <option value="newest">Newest</option>
+    <option value="name">A–Z</option>
+  </select>
+  <input type="search" id="search" placeholder="Search titles, genres, or seeds…">
+</div>
+
+<div class="grid" id="grid"></div>
+<div class="status" id="status" hidden></div>
+
+<dialog id="modal">
+  <div class="modal-hero" id="modalHero">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+  </div>
+  <div class="modal-body" id="modalBody"></div>
+</dialog>
+
+<footer>
+  This product uses the TMDB API but is not endorsed or certified by
+  <a href="https://www.themoviedb.org" style="color:inherit">TMDB</a>.
+  Regenerated weekly from the Nuvio watchlists and watch history of all profiles.
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  const IMG = "https://image.tmdb.org/t/p/";
+  const state = { items: [], type: "all", sort: "rank", q: "" };
+
+  const grid = document.getElementById("grid");
+  const status = document.getElementById("status");
+  const subtitle = document.getElementById("subtitle");
+  const modal = document.getElementById("modal");
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text != null) node.textContent = text;
+    return node;
+  }
+
+  function poster(item, size, wrapClass) {
+    const wrap = el("div", wrapClass);
+    if (item.poster_path) {
+      const img = document.createElement("img");
+      img.src = IMG + size + item.poster_path;
+      img.alt = "";
+      img.loading = "lazy";
+      img.onerror = () => { img.replaceWith(el("div", "poster-fallback", item.name)); };
+      wrap.appendChild(img);
+    } else {
+      wrap.appendChild(el("div", "poster-fallback", item.name));
+    }
+    return wrap;
+  }
+
+  function votes(count) {
+    if (count >= 1000) return (count / 1000).toFixed(count >= 10000 ? 0 : 1) + "k";
+    return String(count);
+  }
+
+  function card(item) {
+    const button = el("button", "card");
+    const wrap = poster(item, "w342", "poster-wrap");
+    const rank = el("span", "badge rank", "#" + item.rank);
+    const type = el("span", "badge type", item.content_type);
+    wrap.append(rank, type);
+    const title = el("div", "card-title", item.name);
+    const meta = el("div", "card-meta");
+    if (item.year) meta.append(item.year + " · ");
+    const star = el("span", "star", "★ ");
+    meta.append(star, item.vote_average.toFixed(1));
+    button.append(wrap, title, meta);
+    button.addEventListener("click", () => openModal(item));
+    return button;
+  }
+
+  function openModal(item) {
+    const hero = document.getElementById("modalHero");
+    const body = document.getElementById("modalBody");
+    hero.querySelectorAll("img").forEach((n) => n.remove());
+    body.replaceChildren();
+
+    if (item.backdrop_path) {
+      const img = document.createElement("img");
+      img.src = IMG + "w780" + item.backdrop_path;
+      img.alt = "";
+      img.onerror = () => img.remove();
+      hero.prepend(img);
+    }
+
+    const head = el("div", "modal-head");
+    head.appendChild(poster(item, "w342", "modal-poster"));
+    const headText = el("div");
+    headText.appendChild(el("h2", null, item.name));
+    const parts = [];
+    if (item.year) parts.push(item.year);
+    parts.push(item.content_type === "series" ? "Series" : "Movie");
+    parts.push("★ " + item.vote_average.toFixed(1) + " (" + votes(item.vote_count) + " votes)");
+    headText.appendChild(el("p", "modal-sub", parts.join("  ·  ")));
+    head.appendChild(headText);
+    body.appendChild(head);
+
+    if (item.genres && item.genres.length) {
+      const row = el("div", "genre-row");
+      item.genres.forEach((g) => row.appendChild(el("span", "chip", g)));
+      body.appendChild(row);
+    }
+
+    if (item.overview) body.appendChild(el("p", "overview", item.overview));
+
+    if (item.sources && item.sources.length) {
+      const because = el("p", "because");
+      because.appendChild(el("strong", null, "Because you watched: "));
+      because.append(item.sources.join(", "));
+      body.appendChild(because);
+    }
+
+    const links = el("div", "modal-links");
+    const tmdb = el("a", null, "View on TMDB");
+    tmdb.href = item.tmdb_url;
+    tmdb.target = "_blank";
+    tmdb.rel = "noopener";
+    links.appendChild(tmdb);
+    if (item.imdb_url) {
+      const imdb = el("a", null, "View on IMDb");
+      imdb.href = item.imdb_url;
+      imdb.target = "_blank";
+      imdb.rel = "noopener";
+      links.appendChild(imdb);
+    }
+    body.appendChild(links);
+
+    modal.showModal();
+  }
+
+  document.getElementById("modalClose").addEventListener("click", () => modal.close());
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) modal.close();
+  });
+
+  function matches(item, q) {
+    const haystack = [item.name, item.year, ...(item.genres || []), ...(item.sources || [])]
+      .join(" ")
+      .toLowerCase();
+    return haystack.includes(q);
+  }
+
+  function render() {
+    const q = state.q.trim().toLowerCase();
+    let items = state.items.filter(
+      (item) =>
+        (state.type === "all" || item.content_type === state.type) &&
+        (!q || matches(item, q))
+    );
+    const sorters = {
+      rank: (a, b) => a.rank - b.rank,
+      rating: (a, b) => b.vote_average - a.vote_average || b.vote_count - a.vote_count,
+      newest: (a, b) => (b.year || "").localeCompare(a.year || "") || a.rank - b.rank,
+      name: (a, b) => a.name.localeCompare(b.name),
+    };
+    items = items.slice().sort(sorters[state.sort]);
+
+    grid.replaceChildren(...items.map(card));
+    status.hidden = items.length > 0;
+    if (!items.length) {
+      status.replaceChildren(el("p", null, "Nothing matches those filters."));
+    }
+  }
+
+  document.getElementById("typeFilter").addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-type]");
+    if (!button) return;
+    document.querySelectorAll("#typeFilter button").forEach((b) => b.classList.remove("active"));
+    button.classList.add("active");
+    state.type = button.dataset.type;
+    render();
+  });
+  document.getElementById("sort").addEventListener("change", (event) => {
+    state.sort = event.target.value;
+    render();
+  });
+  document.getElementById("search").addEventListener("input", (event) => {
+    state.q = event.target.value;
+    render();
+  });
+
+  fetch("recommendations.json")
+    .then((response) => {
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      return response.json();
+    })
+    .then((data) => {
+      state.items = data.items || [];
+      const when = (data.generated_at || "").slice(0, 10);
+      const seeds = data.seed_counts || {};
+      const seedTotal = (seeds.watchlist || 0) + (seeds.watch_history || 0);
+      subtitle.textContent =
+        state.items.length + " picks from " + seedTotal + " watched & watchlisted titles" +
+        (when ? " · updated " + when : "");
+      document.getElementById("controls").hidden = false;
+      render();
+    })
+    .catch(() => {
+      subtitle.textContent = "";
+      status.hidden = false;
+      status.replaceChildren(
+        el("h2", null, "No recommendations yet"),
+        el("p", null, "Run the “Weekly Nuvio Watchlist Sync” workflow to generate "),
+        el("p", null, "recommendations.json — this page will fill in on the next deploy.")
+      );
+    });
+})();
+</script>
+</body>
+</html>

@@ -28,6 +28,14 @@ This job is best-effort and commits independently of `backup`: if the `TMDB_API_
 
 **Setup:** create a free TMDB account, get an API key at <https://www.themoviedb.org/settings/api> (the v3 key and the v4 read access token both work), and add it as the `TMDB_API_KEY` repository secret.
 
+## Web UI
+
+[`site/`](site/) is a static page (no build step) that renders `site/recommendations.json` — written by `generate_recommendations.py` alongside the text file — as a poster grid with TMDB cover art, ratings, vote counts, genres, and descriptions. Cards open a detail view with the full overview, the "because you watched" seed titles, and TMDB/IMDb links; the toolbar filters by movies/series, sorts by match/rating/year/title, and searches across titles, genres, and seeds. Cover art loads straight from TMDB's public image CDN, so the page needs no API key.
+
+**Deploy on Vercel:** import the GitHub repo at <https://vercel.com/new>, set **Root Directory** to `nuvio-watchlist-sync/site`, framework preset "Other" — no build command or env vars needed. Each weekly sync commits a fresh `recommendations.json`, which triggers an automatic redeploy.
+
+**Preview locally:** `python3 -m http.server -d site` and open <http://localhost:8000>.
+
 ## Run locally
 
 ```sh

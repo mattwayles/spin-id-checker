@@ -73,6 +73,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if [ -f recommendations.txt ]; then git add recommendations.txt; fi
+          if [ -f site/recommendations.json ]; then git add site/recommendations.json; fi
           git diff --cached --quiet || git commit -m "Nuvio recommendations: $(date -u +%F)"
           git pull --rebase origin master
           git push

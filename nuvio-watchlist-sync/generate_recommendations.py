@@ -6,9 +6,12 @@ account: the backed-up watchlist files (watchlists/profile-*.txt) and
 the live Nuvio watch history (the sync_pull_watched_items RPC, fetched
 with the account credentials). Each seed title is looked up on TMDB
 (The Movie Database) by its IMDb id, TMDB's "recommendations" for it
-are pulled, and the results are aggregated into one ranked list:
+are pulled, and the results are aggregated into one ranked list,
+written twice:
 
-    recommendations.txt
+    recommendations.txt        plain-text list (see line format below)
+    site/recommendations.json  rich TMDB metadata (poster, overview,
+                               rating, genres, ...) for the web UI
 
 Candidates already on any watchlist or already watched are excluded.
 A candidate ranks by how many seed titles recommend it (ties broken by
@@ -28,7 +31,7 @@ v4 read access token work as TMDB_API_KEY.
 Usage:
     NUVIO_EMAIL=... NUVIO_PASSWORD=... TMDB_API_KEY=... \
         python3 generate_recommendations.py \
-        [--watchlist-dir DIR] [--out FILE] [--limit N]
+        [--watchlist-dir DIR] [--out FILE] [--json-out FILE] [--limit N]
 """
 
 import argparse
@@ -192,6 +195,7 @@ def build_candidates(items):
                 {
                     "name": clean_field(rec.get("title") or rec.get("name")),
                     "vote": round(rec.get("vote_average") or 0, 1),
+                    "rec": rec,
                     "sources": set(),
                 },
             )
@@ -207,11 +211,26 @@ def rank_candidates(candidates):
     )
 
 
-def resolve_lines(ranked, seed_imdb_ids, limit):
-    """Turn ranked candidates into output lines, fetching IMDb ids lazily."""
-    lines = []
+def fetch_genre_names():
+    """TMDB genre id -> name, per media type. Best-effort."""
+    genres = {}
+    for media_type in ("movie", "tv"):
+        try:
+            result = tmdb_get(f"/genre/{media_type}/list")
+        except RuntimeError as error:
+            print(f"Genre list failed for {media_type}: {error}", file=sys.stderr)
+            result = {}
+        genres[media_type] = {
+            g["id"]: g["name"] for g in result.get("genres") or []
+        }
+    return genres
+
+
+def resolve_records(ranked, seed_imdb_ids, limit, genre_names):
+    """Turn ranked candidates into output records, fetching IMDb ids lazily."""
+    records = []
     for (media_type, tmdb_id), info in ranked:
-        if len(lines) >= limit:
+        if len(records) >= limit:
             break
         try:
             external = tmdb_get(f"/{media_type}/{tmdb_id}/external_ids")
@@ -221,21 +240,38 @@ def resolve_lines(ranked, seed_imdb_ids, limit):
         imdb_id = external.get("imdb_id") or f"tmdb:{tmdb_id}"
         if imdb_id in seed_imdb_ids:
             continue
-        lines.append(
-            "\t".join(
-                [
-                    imdb_id,
-                    CONTENT_TYPE[media_type],
-                    info["name"],
-                    because_you_watched(info["sources"]),
-                ]
-            )
+        rec = info["rec"]
+        date = rec.get("release_date") or rec.get("first_air_date") or ""
+        records.append(
+            {
+                "rank": len(records) + 1,
+                "content_id": imdb_id,
+                "content_type": CONTENT_TYPE[media_type],
+                "name": info["name"],
+                "year": date[:4],
+                "overview": clean_field(rec.get("overview")),
+                "poster_path": rec.get("poster_path"),
+                "backdrop_path": rec.get("backdrop_path"),
+                "vote_average": info["vote"],
+                "vote_count": rec.get("vote_count") or 0,
+                "genres": [
+                    genre_names[media_type][genre_id]
+                    for genre_id in rec.get("genre_ids") or []
+                    if genre_id in genre_names.get(media_type, {})
+                ],
+                "sources": sorted(info["sources"]),
+                "tmdb_url": f"https://www.themoviedb.org/{media_type}/{tmdb_id}",
+                "imdb_url": (
+                    f"https://www.imdb.com/title/{imdb_id}/"
+                    if imdb_id.startswith("tt")
+                    else None
+                ),
+            }
         )
-    return lines
+    return records
 
 
-def write_recommendations(path, lines):
-    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+def write_recommendations(path, records, timestamp):
     header = (
         "# Nuvio recommendations — aggregated from every profile's "
         "watchlist and watch history\n"
@@ -245,7 +281,30 @@ def write_recommendations(path, lines):
     )
     with open(path, "w") as out_file:
         out_file.write(header)
-        out_file.writelines(line + "\n" for line in lines)
+        for record in records:
+            out_file.write(
+                "\t".join(
+                    [
+                        record["content_id"],
+                        record["content_type"],
+                        record["name"],
+                        because_you_watched(record["sources"]),
+                    ]
+                )
+                + "\n"
+            )
+
+
+def write_json(path, records, timestamp, seed_counts):
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    payload = {
+        "generated_at": timestamp,
+        "seed_counts": seed_counts,
+        "items": records,
+    }
+    with open(path, "w") as out_file:
+        json.dump(payload, out_file, indent=1, ensure_ascii=False)
+        out_file.write("\n")
 
 
 def main():
@@ -255,6 +314,11 @@ def main():
     )
     arg_parser.add_argument(
         "--out", default="recommendations.txt", help="output file path"
+    )
+    arg_parser.add_argument(
+        "--json-out",
+        default="site/recommendations.json",
+        help="rich JSON output path (consumed by the web UI)",
     )
     arg_parser.add_argument(
         "--limit", type=int, default=50, help="number of recommendations to keep"
@@ -300,9 +364,21 @@ def main():
     )
 
     candidates = build_candidates(items)
-    lines = resolve_lines(rank_candidates(candidates), set(items), args.limit)
-    write_recommendations(args.out, lines)
-    print(f"Wrote {len(lines)} recommendations to {args.out}")
+    records = resolve_records(
+        rank_candidates(candidates), set(items), args.limit, fetch_genre_names()
+    )
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    write_recommendations(args.out, records, timestamp)
+    write_json(
+        args.json_out,
+        records,
+        timestamp,
+        {
+            "watchlist": watchlist_count,
+            "watch_history": len(items) - watchlist_count,
+        },
+    )
+    print(f"Wrote {len(records)} recommendations to {args.out} and {args.json_out}")
 
 
 if __name__ == "__main__":
