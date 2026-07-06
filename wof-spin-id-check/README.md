@@ -15,7 +15,7 @@ Checks whether one of my Wheel of Fortune Spin IDs won today's drawing — autom
 
 ## Automation
 
-A GitHub Actions workflow ([`.github/workflows/spin-check.yml`](../.github/workflows/spin-check.yml)) runs the check daily at 16:00 UTC (~12pm ET) and commits the result to [`spin_log.txt`](spin_log.txt), building a permanent history of every run:
+A GitHub Actions workflow ([`.github/workflows/spin-check.yml`](../.github/workflows/spin-check.yml)) runs the check daily at 16:37 UTC (~12:37pm ET) and commits the result to [`spin_log.txt`](spin_log.txt), building a permanent history of every run:
 
 ```
 2026-07-03T19:34:07Z  winning_id=RL3853004  result=no-win
