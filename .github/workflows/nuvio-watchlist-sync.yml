@@ -33,4 +33,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add watchlists
           git diff --cached --quiet || git commit -m "Nuvio watchlist sync: $(date -u +%F)"
+          # The checkout can be behind origin/master (re-runs pin the
+          # trigger-time SHA; another workflow may have pushed since),
+          # so rebase our commit onto the current remote tip first.
+          git pull --rebase origin master
           git push
