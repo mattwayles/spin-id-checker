@@ -99,6 +99,6 @@ module.exports = async function handler(req, res) {
     res.status(200).json({ ok: true, already_added: alreadyAdded });
   } catch (error) {
     console.error(error);
-    res.status(502).json({ error: "Failed to update Nuvio watchlist", detail: error.message });
+    res.status(502).json({ error: "Failed to update Nuvio watchlist" });
   }
 };
