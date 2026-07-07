@@ -75,7 +75,7 @@
   .card {
     background: none; border: 0; padding: 0; margin: 0;
     font-family: inherit; color: inherit; text-align: left;
-    cursor: pointer; display: block; width: 100%;
+    cursor: pointer; display: block; width: 100%; outline: none;
   }
   .poster-wrap {
     position: relative;
@@ -107,6 +107,31 @@
   }
   .badge.rank { left: 8px; color: var(--text-dim); }
   .badge.type { right: 8px; color: var(--accent); text-transform: capitalize; }
+
+  .watch-add {
+    position: absolute; bottom: 8px; right: 8px;
+    width: 30px; height: 30px; border-radius: 999px;
+    background: rgba(11, 13, 18, 0.82); backdrop-filter: blur(4px);
+    border: 1px solid var(--border); color: var(--text);
+    font-size: 1rem; line-height: 1; cursor: pointer; font-family: inherit;
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .watch-add:hover { border-color: var(--accent); color: var(--accent); }
+  .watch-add[data-state="added"] { color: #4caf50; border-color: #4caf50; cursor: default; }
+  .watch-add[data-state="loading"] { opacity: 0.6; cursor: default; }
+  .watch-add[data-state="error"] { color: #e05252; border-color: #e05252; }
+
+  .watch-add-modal {
+    position: static; width: auto; height: auto;
+    color: var(--text); text-decoration: none; font-size: 0.85rem; font-weight: 600;
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 999px; padding: 8px 16px;
+  }
+  .watch-add-modal:hover { border-color: var(--accent); color: var(--accent); }
+  .watch-add-modal[data-state="added"] { color: #4caf50; border-color: #4caf50; }
+  .watch-add-modal[data-state="loading"] { opacity: 0.6; }
+  .watch-add-modal[data-state="error"] { color: #e05252; border-color: #e05252; }
 
   .card-title {
     margin: 8px 2px 0;
@@ -226,6 +251,85 @@
   const subtitle = document.getElementById("subtitle");
   const modal = document.getElementById("modal");
 
+  const ADDED_KEY = "nuvio_added_items";
+  const SECRET_KEY = "nuvio_add_secret";
+  let addedItems;
+  try {
+    addedItems = new Set(JSON.parse(localStorage.getItem(ADDED_KEY) || "[]"));
+  } catch (error) {
+    addedItems = new Set();
+  }
+
+  function itemKey(item) {
+    return item.content_type + ":" + item.content_id;
+  }
+
+  function isAddable(item) {
+    return typeof item.content_id === "string" && item.content_id.startsWith("tt");
+  }
+
+  async function addToWatchlist(item, secretOverride) {
+    const headers = { "Content-Type": "application/json" };
+    const secret = secretOverride || localStorage.getItem(SECRET_KEY);
+    if (secret) headers["x-add-secret"] = secret;
+    const body = JSON.stringify({
+      content_id: item.content_id,
+      content_type: item.content_type,
+      name: item.name,
+    });
+    const response = await fetch("/api/add-to-watchlist", { method: "POST", headers, body });
+    if (response.status === 401 && !secretOverride) {
+      const entered = window.prompt("Enter the watchlist access code:");
+      if (!entered) throw new Error("Cancelled");
+      localStorage.setItem(SECRET_KEY, entered);
+      return addToWatchlist(item, entered);
+    }
+    if (!response.ok) throw new Error("HTTP " + response.status);
+  }
+
+  function watchlistButton(item, variant) {
+    const button = el("button", variant === "modal" ? "watch-add watch-add-modal" : "watch-add");
+    button.type = "button";
+    const key = itemKey(item);
+
+    function setState(state) {
+      button.dataset.state = state;
+      button.disabled = state === "loading" || state === "added";
+      if (state === "added") {
+        button.textContent = variant === "modal" ? "✓ On watchlist" : "✓";
+      } else if (state === "loading") {
+        button.textContent = "…";
+      } else if (state === "error") {
+        button.textContent = variant === "modal" ? "Couldn't add — retry" : "!";
+      } else {
+        button.textContent = variant === "modal" ? "+ Add to watchlist" : "+";
+      }
+      button.setAttribute(
+        "aria-label",
+        state === "added" ? "Already on your Nuvio watchlist" : "Add to Nuvio watchlist"
+      );
+    }
+
+    setState(addedItems.has(key) ? "added" : "idle");
+
+    button.addEventListener("click", async (event) => {
+      event.stopPropagation();
+      if (button.dataset.state === "loading" || button.dataset.state === "added") return;
+      setState("loading");
+      try {
+        await addToWatchlist(item);
+        addedItems.add(key);
+        localStorage.setItem(ADDED_KEY, JSON.stringify(Array.from(addedItems)));
+        setState("added");
+      } catch (error) {
+        setState("error");
+        setTimeout(() => setState("idle"), 2500);
+      }
+    });
+
+    return button;
+  }
+
   function el(tag, className, text) {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -254,19 +358,28 @@
   }
 
   function card(item) {
-    const button = el("button", "card");
+    const card = el("div", "card");
+    card.tabIndex = 0;
+    card.setAttribute("role", "button");
     const wrap = poster(item, "w342", "poster-wrap");
     const rank = el("span", "badge rank", "#" + item.rank);
     const type = el("span", "badge type", item.content_type);
     wrap.append(rank, type);
+    if (isAddable(item)) wrap.appendChild(watchlistButton(item, "card"));
     const title = el("div", "card-title", item.name);
     const meta = el("div", "card-meta");
     if (item.year) meta.append(item.year + " · ");
     const star = el("span", "star", "★ ");
     meta.append(star, item.vote_average.toFixed(1));
-    button.append(wrap, title, meta);
-    button.addEventListener("click", () => openModal(item));
-    return button;
+    card.append(wrap, title, meta);
+    card.addEventListener("click", () => openModal(item));
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openModal(item);
+      }
+    });
+    return card;
   }
 
   function openModal(item) {
@@ -311,6 +424,7 @@
     }
 
     const links = el("div", "modal-links");
+    if (isAddable(item)) links.appendChild(watchlistButton(item, "modal"));
     const tmdb = el("a", null, "View on TMDB");
     tmdb.href = item.tmdb_url;
     tmdb.target = "_blank";

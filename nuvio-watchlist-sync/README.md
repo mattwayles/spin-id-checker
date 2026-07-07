@@ -32,9 +32,23 @@ This job is best-effort and commits independently of `backup`: if the `TMDB_API_
 
 [`site/`](site/) is a static page (no build step) that renders `site/recommendations.json` — written by `generate_recommendations.py` alongside the text file — as a poster grid with TMDB cover art, ratings, vote counts, genres, and descriptions. Cards open a detail view with the full overview, the "because you watched" seed titles, and TMDB/IMDb links; the toolbar filters by movies/series, sorts by match/rating/year/title, and searches across titles, genres, and seeds. Cover art loads straight from TMDB's public image CDN, so the page needs no API key.
 
-**Deploy on Vercel:** import the GitHub repo at <https://vercel.com/new>, set **Root Directory** to `nuvio-watchlist-sync/site`, framework preset "Other" — no build command or env vars needed. Each weekly sync commits a fresh `recommendations.json`, which triggers an automatic redeploy.
+Every card and detail view also has an **"Add to watchlist"** button (only shown for items with a real IMDb id, i.e. not the rare `tmdb:<id>` fallback) that adds the item straight to your Nuvio profile without leaving the page. It posts to [`site/api/add-to-watchlist.js`](site/api/add-to-watchlist.js), a Vercel serverless function that signs in to the Nuvio Cloud API with the same credentials as the sync scripts, pulls the profile's current library, and pushes it back with the new item appended (`sync_push_library` replaces the whole library, so there's no incremental "append" call). Credentials never reach the browser. Once added, the button shows a checkmark; state is remembered per-browser in `localStorage` so it survives reloads.
 
-**Preview locally:** `python3 -m http.server -d site` and open <http://localhost:8000>.
+**Deploy on Vercel:** import the GitHub repo at <https://vercel.com/new>, set **Root Directory** to `nuvio-watchlist-sync/site`, framework preset "Other" — no build command needed, but set these **Environment Variables** (Project Settings → Environment Variables) so the add-to-watchlist function works:
+
+| Environment variable | Required | Purpose |
+|---------------------|----------|---------|
+| `NUVIO_EMAIL` | yes | Nuvio account email |
+| `NUVIO_PASSWORD` | yes | Nuvio account password |
+| `NUVIO_PROFILE_INDEX` | no | Which profile's watchlist to add to (default `1`, usually the account owner's profile) |
+| `NUVIO_API_KEY` | no | Overrides the built-in public publishable key |
+| `ADD_TO_WATCHLIST_TOKEN` | no | Shared secret the page must send to use the add button — set this if the deployed URL isn't private, since anyone who can reach it could otherwise add items to your watchlist. The page prompts for it once and remembers it in `localStorage`. |
+
+These are separate from the GitHub Actions repository secrets used by the sync workflow — Vercel doesn't read those, so they need to be added again in the Vercel project.
+
+Each weekly sync commits a fresh `recommendations.json`, which triggers an automatic redeploy.
+
+**Preview locally:** `python3 -m http.server -d site` and open <http://localhost:8000> (the add-to-watchlist button will fail without `vercel dev`, since Python's server doesn't run the `api/` function — use `vercel dev` from `site/` instead if you need to test it).
 
 ## Run locally
 
