@@ -1,12 +1,319 @@
 {
- "generated_at": "2026-07-13T16:44:46Z",
+ "generated_at": "2026-07-20T16:03:32Z",
  "seed_counts": {
-  "watchlist": 204,
-  "watch_history": 62
+  "watchlist": 246,
+  "watch_history": 76
  },
  "items": [
   {
    "rank": 1,
+   "content_id": "tt8300324",
+   "content_type": "series",
+   "name": "I AM A KILLER",
+   "year": "2018",
+   "overview": "Death row inmates convicted of capital murder give a firsthand account of their crimes in this documentary series.",
+   "poster_path": "/1dJcf9KiZ1lNgjiTv5H8irIo2Ky.jpg",
+   "backdrop_path": "/x9rh1VOgqoP9fdgB0TJCWwPFgau.jpg",
+   "vote_average": 6.8,
+   "vote_count": 70,
+   "genres": [
+    "Documentary",
+    "Crime"
+   ],
+   "sources": [
+    "American Manhunt: O.J. Simpson",
+    "Betrayal",
+    "Crime Scene: The Texas Killing Fields",
+    "Crime Scene: The Times Square Killer",
+    "Death in Apartment 603: What Happened to Ellen Greenberg?",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "How to Become a Tyrant",
+    "Michael Jackson: The Verdict",
+    "Mind Over Murder",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "Stalking Samantha: 13 Years of Terror",
+    "The Fox Hollow Murders: Playground of a Serial Killer",
+    "The Last Dance",
+    "The Playing Card Killer",
+    "The Ripper",
+    "The Vow",
+    "This Is the Zodiac Speaking",
+    "Trust Me: The False Prophet",
+    "Who Killed Garrett Phillips?",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/81337",
+   "imdb_url": "https://www.imdb.com/title/tt8300324/"
+  },
+  {
+   "rank": 2,
+   "content_id": "tt22646714",
+   "content_type": "series",
+   "name": "Killer Sally",
+   "year": "2022",
+   "overview": "Interviews with friends, family and Sally McNeil herself chart a bodybuilding couple’s rocky marriage — and its shocking end in a Valentine's Day murder.",
+   "poster_path": "/46WBP1KGrI9pPstPhxkBvNR0T0m.jpg",
+   "backdrop_path": "/f3nN13gUugqP4IvQCc3aZwfAxbQ.jpg",
+   "vote_average": 6.7,
+   "vote_count": 66,
+   "genres": [
+    "Documentary",
+    "Crime"
+   ],
+   "sources": [
+    "American Manhunt: O.J. Simpson",
+    "Betrayal",
+    "Crime Scene: The Texas Killing Fields",
+    "Crime Scene: The Times Square Killer",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "Don't Date Brandon",
+    "Mind Over Murder",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "Stalking Samantha: 13 Years of Terror",
+    "The Fox Hollow Murders: Playground of a Serial Killer",
+    "The Playing Card Killer",
+    "The Ripper",
+    "The Vow",
+    "This Is the Zodiac Speaking",
+    "Trust Me: The False Prophet",
+    "Who Killed Garrett Phillips?",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/212870",
+   "imdb_url": "https://www.imdb.com/title/tt22646714/"
+  },
+  {
+   "rank": 3,
+   "content_id": "tt21946032",
+   "content_type": "series",
+   "name": "Conversations with a Killer: The Jeffrey Dahmer Tapes",
+   "year": "2022",
+   "overview": "Serial killer Jeffrey Dahmer confesses to his gruesome crimes in unguarded interviews, offering an unsettling view into a disturbed mind.",
+   "poster_path": "/hsdNCScC2rk23fLuHNNgBXtI891.jpg",
+   "backdrop_path": "/42iDbOtqWqPvI3FnP3KafLFrQq.jpg",
+   "vote_average": 7.8,
+   "vote_count": 283,
+   "genres": [
+    "Documentary",
+    "Crime"
+   ],
+   "sources": [
+    "American Manhunt: O.J. Simpson",
+    "Betrayal",
+    "Crime Scene: The Texas Killing Fields",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Mind Over Murder",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "Stalking Samantha: 13 Years of Terror",
+    "The Fox Hollow Murders: Playground of a Serial Killer",
+    "The Playing Card Killer",
+    "The Ripper",
+    "The Vow",
+    "This Is the Zodiac Speaking",
+    "Trust Me: The False Prophet",
+    "Who Killed Garrett Phillips?",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/209167",
+   "imdb_url": "https://www.imdb.com/title/tt21946032/"
+  },
+  {
+   "rank": 4,
+   "content_id": "tt13263106",
+   "content_type": "series",
+   "name": "Murder on Middle Beach",
+   "year": "2020",
+   "overview": "A four-part documentary series revolving around the case of single mother Barbara Hamburg, who was brutally murdered in 2010 near her home in the upper-middle class enclave of Madison, Connecticut. The series presents first-time filmmaker Madison Hamburg’s complicated journey as a young man determined to solve an unspeakable crime and absolve the people he loves, while looking for answers within his fractured family and community.",
+   "poster_path": "/j1VQYGEK8GZgqgGT0RrHTjk8NpG.jpg",
+   "backdrop_path": "/pwhAKh98IM9S7rS8EmAT5o91raH.jpg",
+   "vote_average": 7.3,
+   "vote_count": 32,
+   "genres": [
+    "Documentary",
+    "Crime",
+    "Mystery"
+   ],
+   "sources": [
+    "Crime Scene: The Texas Killing Fields",
+    "Crime Scene: The Times Square Killer",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Mind Over Murder",
+    "Most Evil",
+    "Stalking Samantha: 13 Years of Terror",
+    "The Fox Hollow Murders: Playground of a Serial Killer",
+    "The Playing Card Killer",
+    "The Ripper",
+    "The Vow",
+    "This Is the Zodiac Speaking",
+    "Trust Me: The False Prophet",
+    "Unsolved History",
+    "Unsolved Mysteries",
+    "Who Killed Garrett Phillips?",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/112111",
+   "imdb_url": "https://www.imdb.com/title/tt13263106/"
+  },
+  {
+   "rank": 5,
+   "content_id": "tt1934673",
+   "content_type": "series",
+   "name": "Homicide Hunter: Lt Joe Kenda",
+   "year": "2011",
+   "overview": "A non-fiction investigative series of murder cases told through the personal experience of retired detective, Lieutenant Joe Kenda. Through re-enactments, discussions with investigation teams, and interviews with victims' families and other involved persons, the show highlights Kenda's successes with his 400 homicide case history and 92 percent solution rate.",
+   "poster_path": "/6QDuvq9GDGpau3lksoedlfNV4OZ.jpg",
+   "backdrop_path": "/zcm2LHVvoKc0eHO4u9NZeFVoZLS.jpg",
+   "vote_average": 8.9,
+   "vote_count": 49,
+   "genres": [
+    "Documentary",
+    "Crime"
+   ],
+   "sources": [
+    "American Manhunt: O.J. Simpson",
+    "Crime Scene: The Texas Killing Fields",
+    "Crime Scene: The Times Square Killer",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Mind Over Murder",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "Stalking Samantha: 13 Years of Terror",
+    "The Fox Hollow Murders: Playground of a Serial Killer",
+    "The Playing Card Killer",
+    "The Ripper",
+    "This Is the Zodiac Speaking",
+    "Trust Me: The False Prophet",
+    "Unsolved History",
+    "Who Killed Garrett Phillips?",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/62168",
+   "imdb_url": "https://www.imdb.com/title/tt1934673/"
+  },
+  {
+   "rank": 6,
+   "content_id": "tt7935522",
+   "content_type": "series",
+   "name": "Drug Lords",
+   "year": "2018",
+   "overview": "Witness the stories of history's most notorious kingpins, their terrifying enforcers, and the men and women who've sworn to bring them down.",
+   "poster_path": "/g2SuNwbP8CDwSBaviIct8WmXy4V.jpg",
+   "backdrop_path": "/lcCcseKQScOAojEMVRxoE24y0Hu.jpg",
+   "vote_average": 7.3,
+   "vote_count": 29,
+   "genres": [
+    "Documentary"
+   ],
+   "sources": [
+    "Betrayal",
+    "Death in Apartment 603: What Happened to Ellen Greenberg?",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "Don't Date Brandon",
+    "History 101",
+    "How to Become a Tyrant",
+    "Michael Jackson: The Verdict",
+    "Pretty Baby: Brooke Shields",
+    "Stalking Samantha: 13 Years of Terror",
+    "This Is Life with Lisa Ling",
+    "Trust Me: The False Prophet",
+    "Twisted Yoga",
+    "Unsolved History",
+    "Who Killed Garrett Phillips?",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/76498",
+   "imdb_url": "https://www.imdb.com/title/tt7935522/"
+  },
+  {
+   "rank": 7,
+   "content_id": "tt0103396",
+   "content_type": "series",
+   "name": "Dateline",
+   "year": "1992",
+   "overview": "Dateline NBC, or simply Dateline, is a weekly American television newsmagazine series. It was previously the network's flagship newsmagazine, but now focuses mainly on true crime stories with only occasional editions that focus on other topics.",
+   "poster_path": "/xj9zonhdomfBpEhZQmAON5u3CiB.jpg",
+   "backdrop_path": "/4m8QH2C6hBQQ08EgwaOtOv7ATFh.jpg",
+   "vote_average": 6.5,
+   "vote_count": 51,
+   "genres": [
+    "Crime",
+    "Documentary"
+   ],
+   "sources": [
+    "American Manhunt: O.J. Simpson",
+    "Crime Scene: The Texas Killing Fields",
+    "Crime Scene: The Times Square Killer",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "Stalking Samantha: 13 Years of Terror",
+    "The Playing Card Killer",
+    "The Ripper",
+    "This Is the Zodiac Speaking",
+    "Trust Me: The False Prophet",
+    "Unsolved History",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/78",
+   "imdb_url": "https://www.imdb.com/title/tt0103396/"
+  },
+  {
+   "rank": 8,
+   "content_id": "tt6439562",
+   "content_type": "series",
+   "name": "Mind Field",
+   "year": "2017",
+   "overview": "Explore the surprising things we know (and don’t know) about why people are the way they are through expert interviews, rare footage from historical experiments, and brand-new, ground-breaking demonstrations of human nature at work.",
+   "poster_path": "/k7cC9Ix3qz1xPg540koRtWHjLbN.jpg",
+   "backdrop_path": "/vT1rGS93q8O4GwmEG1d6McOGhgm.jpg",
+   "vote_average": 8.2,
+   "vote_count": 58,
+   "genres": [
+    "Documentary"
+   ],
+   "sources": [
+    "Betrayal",
+    "Dancing for the Devil: The 7M TikTok Cult",
+    "Death in Apartment 603: What Happened to Ellen Greenberg?",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "Don't Date Brandon",
+    "History 101",
+    "How to Become a Tyrant",
+    "Michael Jackson: The Verdict",
+    "Pretty Baby: Brooke Shields",
+    "The Last Dance",
+    "This Is Life with Lisa Ling",
+    "Trust Me: The False Prophet",
+    "Twisted Yoga",
+    "Unsolved History",
+    "Who Killed Garrett Phillips?"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/69763",
+   "imdb_url": "https://www.imdb.com/title/tt6439562/"
+  },
+  {
+   "rank": 9,
    "content_id": "tt6772336",
    "content_type": "series",
    "name": "Fear Factor",
@@ -40,7 +347,7 @@
    "imdb_url": "https://www.imdb.com/title/tt6772336/"
   },
   {
-   "rank": 2,
+   "rank": 10,
    "content_id": "tt0914829",
    "content_type": "series",
    "name": "Bad Girls Club",
@@ -74,7 +381,76 @@
    "imdb_url": "https://www.imdb.com/title/tt0914829/"
   },
   {
-   "rank": 3,
+   "rank": 11,
+   "content_id": "tt30412869",
+   "content_type": "series",
+   "name": "56 Days",
+   "year": "2026",
+   "overview": "When an unidentified body is found in a luxury apartment linked to Oliver Kennedy and his girlfriend Ciara Wyse, Detectives Lee Reardon and Karl Connolly reconstruct the couple's deadly romance across the past 56 days.",
+   "poster_path": "/sdJLbucggwGj8NdX0UN2zt1Vwmn.jpg",
+   "backdrop_path": "/dnEljhBkw53ra7tEl2JNKGrI0wk.jpg",
+   "vote_average": 7.3,
+   "vote_count": 201,
+   "genres": [
+    "Drama",
+    "Crime",
+    "Mystery"
+   ],
+   "sources": [
+    "A Good Girl's Guide to Murder",
+    "Cape Fear",
+    "Dexter: New Blood",
+    "Dexter: Original Sin",
+    "Dexter: Resurrection",
+    "Euphoria",
+    "How to Get Away with Murder",
+    "I Will Find You",
+    "Love & Death",
+    "Revenge",
+    "Tell Me Lies",
+    "The Affair",
+    "The Witness",
+    "You"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/241372",
+   "imdb_url": "https://www.imdb.com/title/tt30412869/"
+  },
+  {
+   "rank": 12,
+   "content_id": "tt31556143",
+   "content_type": "series",
+   "name": "Homicide",
+   "year": "2024",
+   "overview": "Detectives and prosecutors revisit their most challenging homicide cases in this chilling true-crime docuseries.",
+   "poster_path": "/byh0uHyYoGjkPL9ULhLyAbnfTPX.jpg",
+   "backdrop_path": "/b9dpWPRe334gViVcfwqKSL0ug5F.jpg",
+   "vote_average": 7.1,
+   "vote_count": 32,
+   "genres": [
+    "Documentary",
+    "Crime"
+   ],
+   "sources": [
+    "American Manhunt: O.J. Simpson",
+    "Crime Scene: The Texas Killing Fields",
+    "Crime Scene: The Times Square Killer",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Mind Over Murder",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "The Fox Hollow Murders: Playground of a Serial Killer",
+    "The Playing Card Killer",
+    "The Ripper",
+    "This Is the Zodiac Speaking",
+    "Who Killed Garrett Phillips?",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/248126",
+   "imdb_url": "https://www.imdb.com/title/tt31556143/"
+  },
+  {
+   "rank": 13,
    "content_id": "tt1720601",
    "content_type": "series",
    "name": "The Real Housewives of Beverly Hills",
@@ -95,6 +471,7 @@
     "90 Day Fiancé: The Other Way",
     "90 Day Fiancé: What Now?",
     "90 Day: The Last Resort",
+    "Cops",
     "Love After Lockup",
     "Married at First Sight",
     "Married at First Sight Australia",
@@ -106,7 +483,73 @@
    "imdb_url": "https://www.imdb.com/title/tt1720601/"
   },
   {
-   "rank": 4,
+   "rank": 14,
+   "content_id": "tt11794812",
+   "content_type": "series",
+   "name": "Cross",
+   "year": "2024",
+   "overview": "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
+   "poster_path": "/6hhKdavCEZi8d584ZtIrQIrBvZI.jpg",
+   "backdrop_path": "/w4HqCpNojW3kbgtj4qHCnf5G7bf.jpg",
+   "vote_average": 7.0,
+   "vote_count": 301,
+   "genres": [
+    "Crime",
+    "Drama",
+    "Mystery"
+   ],
+   "sources": [
+    "A Good Girl's Guide to Murder",
+    "Cape Fear",
+    "Dexter: New Blood",
+    "Dexter: Original Sin",
+    "Dexter: Resurrection",
+    "I Will Find You",
+    "Law & Order: Special Victims Unit",
+    "Paradise",
+    "Reacher",
+    "Scandal",
+    "The Witness",
+    "Tracker",
+    "You"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/213306",
+   "imdb_url": "https://www.imdb.com/title/tt11794812/"
+  },
+  {
+   "rank": 15,
+   "content_id": "tt13366604",
+   "content_type": "series",
+   "name": "Platonic",
+   "year": "2023",
+   "overview": "A platonic pair of former best friends approaching midlife reconnect after a long rift. The duo’s friendship becomes more consuming—and destabilizes their lives in a hilarious way.",
+   "poster_path": "/7G8wB9CG82nITeFwRFIRSk0sQJs.jpg",
+   "backdrop_path": "/aZerXLRyZMuGjQXI61f2CmSig7o.jpg",
+   "vote_average": 6.9,
+   "vote_count": 211,
+   "genres": [
+    "Comedy"
+   ],
+   "sources": [
+    "American Dad!",
+    "Animal Control",
+    "Human Resources",
+    "It's Always Sunny in Philadelphia",
+    "Kevin Can F**k Himself",
+    "Life, Larry and the Pursuit of Unhappiness: an Almost History of America",
+    "Running Point",
+    "St. Denis Medical",
+    "Ted Lasso",
+    "The Detour",
+    "The Four Seasons",
+    "The Studio",
+    "Veep"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/112211",
+   "imdb_url": "https://www.imdb.com/title/tt13366604/"
+  },
+  {
+   "rank": 16,
    "content_id": "tt10813648",
    "content_type": "series",
    "name": "Ghost Nation",
@@ -137,16 +580,173 @@
    "imdb_url": "https://www.imdb.com/title/tt10813648/"
   },
   {
-   "rank": 5,
-   "content_id": "tt30412869",
+   "rank": 17,
+   "content_id": "tt5396394",
    "content_type": "series",
-   "name": "56 Days",
-   "year": "2026",
-   "overview": "When an unidentified body is found in a luxury apartment linked to Oliver Kennedy and his girlfriend Ciara Wyse, Detectives Lee Reardon and Karl Connolly reconstruct the couple's deadly romance across the past 56 days.",
-   "poster_path": "/sdJLbucggwGj8NdX0UN2zt1Vwmn.jpg",
-   "backdrop_path": "/dnEljhBkw53ra7tEl2JNKGrI0wk.jpg",
+   "name": "American Housewife",
+   "year": "2016",
+   "overview": "A family comedy narrated by Katie, a strong-willed mother, raising her flawed family in a wealthy town filled with perfect wives and their perfect offspring.",
+   "poster_path": "/uDXPOk3fx1kPM1tQdrTdE2f76p2.jpg",
+   "backdrop_path": "/8TLIyltOIjgN1qliQpQ3SCU9DrJ.jpg",
+   "vote_average": 7.7,
+   "vote_count": 180,
+   "genres": [
+    "Comedy"
+   ],
+   "sources": [
+    "Arrested Development",
+    "Bob's Burgers",
+    "Deep Fake Neighbour Wars",
+    "Happy Endings",
+    "How I Met Your Father",
+    "How I Met Your Mother",
+    "Kevin Can Wait",
+    "Married... with Children",
+    "Modern Family",
+    "Mom",
+    "The King of Queens",
+    "The Neighborhood"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/67117",
+   "imdb_url": "https://www.imdb.com/title/tt5396394/"
+  },
+  {
+   "rank": 18,
+   "content_id": "tt34169767",
+   "content_type": "series",
+   "name": "Cold Case: Who Killed JonBenét Ramsey",
+   "year": "2024",
+   "overview": "Police missteps and a media circus derailed the JonBenét Ramsey murder case. This definitive docuseries chronicles the decades-long quest for justice.",
+   "poster_path": "/liKrPPwkZFE4EZPVoVKzXWDNG6R.jpg",
+   "backdrop_path": "/Wfe2X5TcpUGAypUwjy1gOhTsd9.jpg",
    "vote_average": 7.3,
-   "vote_count": 198,
+   "vote_count": 44,
+   "genres": [
+    "Documentary",
+    "Mystery",
+    "Crime"
+   ],
+   "sources": [
+    "American Manhunt: O.J. Simpson",
+    "Crime Scene: The Texas Killing Fields",
+    "Crime Scene: The Times Square Killer",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Mind Over Murder",
+    "Stalking Samantha: 13 Years of Terror",
+    "The Fox Hollow Murders: Playground of a Serial Killer",
+    "The Playing Card Killer",
+    "The Vow",
+    "This Is the Zodiac Speaking",
+    "Unsolved Mysteries",
+    "Worst Neighbor Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/274820",
+   "imdb_url": "https://www.imdb.com/title/tt34169767/"
+  },
+  {
+   "rank": 19,
+   "content_id": "tt7406320",
+   "content_type": "series",
+   "name": "Eli Roth's History of Horror",
+   "year": "2018",
+   "overview": "An in-depth look at the history and pop cultural significance of horror films.",
+   "poster_path": "/15ZXGHIk3nFBqCRCEKVHMO7oINI.jpg",
+   "backdrop_path": "/adOvmspcxDIrCMGS1uLxGGo4YEU.jpg",
+   "vote_average": 6.4,
+   "vote_count": 51,
+   "genres": [
+    "Documentary"
+   ],
+   "sources": [
+    "Betrayal",
+    "Death in Apartment 603: What Happened to Ellen Greenberg?",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "History 101",
+    "How to Become a Tyrant",
+    "Michael Jackson: The Verdict",
+    "Pretty Baby: Brooke Shields",
+    "The Last Dance",
+    "This Is Life with Lisa Ling",
+    "Trust Me: The False Prophet",
+    "Twisted Yoga",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/83181",
+   "imdb_url": "https://www.imdb.com/title/tt7406320/"
+  },
+  {
+   "rank": 20,
+   "content_id": "tt5489746",
+   "content_type": "series",
+   "name": "Evil Lives Here",
+   "year": "2016",
+   "overview": "The true stories of people who lived with a killer. How well do you really know your family? Would you recognize the warning signs? Or would you become entangled in evil?",
+   "poster_path": "/tL5jRxrflh2et3whDxyXgRHEnGJ.jpg",
+   "backdrop_path": "/tCvdyHIYon3f7hRXIeeVrlvD1ui.jpg",
+   "vote_average": 8.0,
+   "vote_count": 43,
+   "genres": [
+    "Crime",
+    "Documentary"
+   ],
+   "sources": [
+    "Crime Scene: The Times Square Killer",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "Stalking Samantha: 13 Years of Terror",
+    "The Playing Card Killer",
+    "The Ripper",
+    "This Is the Zodiac Speaking",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/70249",
+   "imdb_url": "https://www.imdb.com/title/tt5489746/"
+  },
+  {
+   "rank": 21,
+   "content_id": "tt33473000",
+   "content_type": "series",
+   "name": "Sean Combs: The Reckoning",
+   "year": "2025",
+   "overview": "A revealing look at Sean 'Diddy' Combs' journey from music mogul to high-profile sexual offender, featuring footage and insider accounts that expose both his groundbreaking success with Bad Boy Entertainment and the troubling shadows behind his empire.",
+   "poster_path": "/zvozYQ1idmnkF0ugfTud82lpNIJ.jpg",
+   "backdrop_path": "/5L9YS9mpYs0WfuSKYpLd9GUBFc9.jpg",
+   "vote_average": 7.2,
+   "vote_count": 73,
+   "genres": [
+    "Documentary",
+    "Crime"
+   ],
+   "sources": [
+    "American Manhunt: O.J. Simpson",
+    "Betrayal",
+    "Dancing for the Devil: The 7M TikTok Cult",
+    "Michael Jackson: The Verdict",
+    "Most Evil",
+    "The Last Dance",
+    "The Vow",
+    "Trust Me: The False Prophet",
+    "Twisted Yoga",
+    "Who Killed Garrett Phillips?",
+    "Worst Ex Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/255251",
+   "imdb_url": "https://www.imdb.com/title/tt33473000/"
+  },
+  {
+   "rank": 22,
+   "content_id": "tt5611024",
+   "content_type": "series",
+   "name": "Fool Me Once",
+   "year": "2024",
+   "overview": "When ex-soldier Maya sees her murdered husband on a secret nanny cam, she uncovers a deadly conspiracy that stretches deep into the past.",
+   "poster_path": "/Ertv4WLEyHgi8zN4ldOKgPcGAZ.jpg",
+   "backdrop_path": "/v9OgLxYCq5newNdtF8dQAFENs4l.jpg",
+   "vote_average": 7.1,
+   "vote_count": 506,
    "genres": [
     "Drama",
     "Crime",
@@ -155,22 +755,144 @@
    "sources": [
     "A Good Girl's Guide to Murder",
     "Cape Fear",
-    "Dexter: Resurrection",
-    "Euphoria",
-    "How to Get Away with Murder",
+    "Dexter: Original Sin",
     "I Will Find You",
     "Love & Death",
-    "Revenge",
+    "Paradise",
+    "Reacher",
     "Tell Me Lies",
-    "The Affair",
+    "The Blacklist",
     "The Witness",
     "You"
    ],
-   "tmdb_url": "https://www.themoviedb.org/tv/241372",
-   "imdb_url": "https://www.imdb.com/title/tt30412869/"
+   "tmdb_url": "https://www.themoviedb.org/tv/220801",
+   "imdb_url": "https://www.imdb.com/title/tt5611024/"
   },
   {
-   "rank": 6,
+   "rank": 23,
+   "content_id": "tt11823076",
+   "content_type": "series",
+   "name": "Tiger King",
+   "year": "2020",
+   "overview": "A zoo owner spirals out of control amid a cast of eccentric characters in this true murder-for-hire story from the underworld of big cat breeding.",
+   "poster_path": "/dXQCEjVth8P8L47XIsoRt0oL8Gw.jpg",
+   "backdrop_path": "/8GGD7djS6oqTWcKwJb3uT833xeA.jpg",
+   "vote_average": 6.9,
+   "vote_count": 590,
+   "genres": [
+    "Documentary",
+    "Crime"
+   ],
+   "sources": [
+    "Betrayal",
+    "Dancing for the Devil: The 7M TikTok Cult",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "This Is Life with Lisa Ling",
+    "Trust Me: The False Prophet",
+    "Twisted Yoga",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/100698",
+   "imdb_url": "https://www.imdb.com/title/tt11823076/"
+  },
+  {
+   "rank": 24,
+   "content_id": "tt15723914",
+   "content_type": "series",
+   "name": "Catching Killers",
+   "year": "2021",
+   "overview": "The investigators behind infamous serial killer cases reveal the harrowing, chilling details of their extraordinary efforts in this true crime series.",
+   "poster_path": "/628U5ybT3fV0gGbT41Lk3R15Ya0.jpg",
+   "backdrop_path": "/dR8tN9vttcihVKnNUILap9EJZCw.jpg",
+   "vote_average": 6.7,
+   "vote_count": 65,
+   "genres": [
+    "Documentary",
+    "Crime"
+   ],
+   "sources": [
+    "Crime Scene: The Texas Killing Fields",
+    "Crime Scene: The Times Square Killer",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "The Fox Hollow Murders: Playground of a Serial Killer",
+    "The Playing Card Killer",
+    "The Ripper",
+    "This Is the Zodiac Speaking",
+    "Trust Me: The False Prophet",
+    "Worst Ex Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/137003",
+   "imdb_url": "https://www.imdb.com/title/tt15723914/"
+  },
+  {
+   "rank": 25,
+   "content_id": "tt31019484",
+   "content_type": "series",
+   "name": "Missing You",
+   "year": "2025",
+   "overview": "When Detective Kat Donovan matches on a dating app with the fiancé who disappeared years before, she learns that some secrets are best left in the past.",
+   "poster_path": "/aEiqusZEqOrqHmRtOninChmcOG0.jpg",
+   "backdrop_path": "/iC92jNOuhxSIGTFoMmAjtyaNOGV.jpg",
+   "vote_average": 6.1,
+   "vote_count": 156,
+   "genres": [
+    "Drama",
+    "Crime",
+    "Mystery"
+   ],
+   "sources": [
+    "A Good Girl's Guide to Murder",
+    "Cape Fear",
+    "Dexter: New Blood",
+    "Dexter: Original Sin",
+    "Dexter: Resurrection",
+    "I Will Find You",
+    "Love & Death",
+    "Reacher",
+    "The Witness",
+    "Tracker",
+    "You"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/244243",
+   "imdb_url": "https://www.imdb.com/title/tt31019484/"
+  },
+  {
+   "rank": 26,
+   "content_id": "tt0163503",
+   "content_type": "series",
+   "name": "Top Gear",
+   "year": "1978",
+   "overview": "Motoring programme featuring reviews of and reports about cars of all types.",
+   "poster_path": "/7P7vi7RIn5qthQAZrOBIu8zA3pg.jpg",
+   "backdrop_path": "/eOnQIuFYGbtZGilWPpG96eYuotZ.jpg",
+   "vote_average": 8.0,
+   "vote_count": 120,
+   "genres": [
+    "Documentary"
+   ],
+   "sources": [
+    "Bring Me the Beauties: A Model Cult",
+    "Capturing Their Killer: The Girls on the High Bridge",
+    "Chimp Crazy",
+    "Customer Wars",
+    "Fit for TV: The Reality of the Biggest Loser",
+    "John Lennon: Murder Without a Trial",
+    "Naming the Dead",
+    "Signs of a Psychopath",
+    "The Pike County Murders: A Family Massacre",
+    "Wild Crime"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/4498",
+   "imdb_url": "https://www.imdb.com/title/tt0163503/"
+  },
+  {
+   "rank": 27,
    "content_id": "tt4687880",
    "content_type": "series",
    "name": "Goliath",
@@ -194,46 +916,565 @@
     "Money Heist",
     "The Bear",
     "The Witness",
-    "Tracker",
     "Your Friends & Neighbors"
    ],
    "tmdb_url": "https://www.themoviedb.org/tv/67384",
    "imdb_url": "https://www.imdb.com/title/tt4687880/"
   },
   {
-   "rank": 7,
-   "content_id": "tt11794812",
+   "rank": 28,
+   "content_id": "tt27142031",
    "content_type": "series",
-   "name": "Cross",
-   "year": "2024",
-   "overview": "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
-   "poster_path": "/6hhKdavCEZi8d584ZtIrQIrBvZI.jpg",
-   "backdrop_path": "/w4HqCpNojW3kbgtj4qHCnf5G7bf.jpg",
-   "vote_average": 7.0,
-   "vote_count": 299,
+   "name": "American Manhunt: The Boston Marathon Bombing",
+   "year": "2023",
+   "overview": "Archive footage, chilling reenactments and exclusive interviews shed new light on a tragedy — and two brothers — that suspended a city in terror.",
+   "poster_path": "/yagaaZpOgmX3cku7fgMCb4dyNeC.jpg",
+   "backdrop_path": "/nBF4H6NEJyAl60gp1q7fTz7Ij1t.jpg",
+   "vote_average": 7.5,
+   "vote_count": 71,
+   "genres": [
+    "Documentary",
+    "Crime"
+   ],
+   "sources": [
+    "American Manhunt: O.J. Simpson",
+    "Crime Scene: The Texas Killing Fields",
+    "Desperately Seeking Soulmate: Escaping Twin Flames Universe",
+    "Mind Over Murder",
+    "The Fox Hollow Murders: Playground of a Serial Killer",
+    "The Playing Card Killer",
+    "The Ripper",
+    "This Is the Zodiac Speaking",
+    "Trust Me: The False Prophet",
+    "Who Killed Garrett Phillips?"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/222314",
+   "imdb_url": "https://www.imdb.com/title/tt27142031/"
+  },
+  {
+   "rank": 29,
+   "content_id": "tt1874066",
+   "content_type": "series",
+   "name": "Paranormal Witness",
+   "year": "2011",
+   "overview": "A tense, filmic and high-octane drama-documentary series that brings to life the stories of people who have lived through paranormal experiences that defy explanation. Using a mixture of intimate first-hand testimony and grittily realistic drama, the audience is transported into a world turned upside down by extraordinary and terrifying events.",
+   "poster_path": "/NKIoLkRkP8uygZrUJeglYEKyIV.jpg",
+   "backdrop_path": "/biVRAHPK5xpenVatukmWbAErY1S.jpg",
+   "vote_average": 7.4,
+   "vote_count": 106,
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Mystery",
+    "Documentary"
+   ],
+   "sources": [
+    "Bring Me the Beauties: A Model Cult",
+    "Capturing Their Killer: The Girls on the High Bridge",
+    "Chimp Crazy",
+    "Fit for TV: The Reality of the Biggest Loser",
+    "John Lennon: Murder Without a Trial",
+    "Naming the Dead",
+    "Signs of a Psychopath",
+    "The Pike County Murders: A Family Massacre",
+    "Unsolved History",
+    "Wild Crime"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/40919",
+   "imdb_url": "https://www.imdb.com/title/tt1874066/"
+  },
+  {
+   "rank": 30,
+   "content_id": "tt7889220",
+   "content_type": "series",
+   "name": "Dirty Money",
+   "year": "2018",
+   "overview": "From crippling payday loans to cars that cheat emissions tests, this investigative series exposes brazen acts of corporate greed and corruption.",
+   "poster_path": "/hAnNeIPSzV0a8jxE3nkEdCtYWp8.jpg",
+   "backdrop_path": "/8uqazFt7EOoMHCpqxp6KX3DBTAZ.jpg",
+   "vote_average": 7.1,
+   "vote_count": 197,
    "genres": [
     "Crime",
+    "Documentary"
+   ],
+   "sources": [
+    "Betrayal",
+    "Dancing for the Devil: The 7M TikTok Cult",
+    "Death in Apartment 603: What Happened to Ellen Greenberg?",
+    "Don't Date Brandon",
+    "Stalking Samantha: 13 Years of Terror",
+    "The Vow",
+    "This Is Life with Lisa Ling",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever",
+    "Worst Roommate Ever"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/76307",
+   "imdb_url": "https://www.imdb.com/title/tt7889220/"
+  },
+  {
+   "rank": 31,
+   "content_id": "tt0247144",
+   "content_type": "series",
+   "name": "Yes, Dear",
+   "year": "2000",
+   "overview": "A comedy about two young couples and their outrageously contrasting views on parenting. Greg and Kim Warner struggle on a daily basis to become perfect at the job. Kim is a neurotic, stay-at-home mother, and although her husband, Greg, is a success in his career, his more difficult job is keeping his wife calm as they raise their two young children. While Kim is determined to be the perfect mother and perfect wife and to raise the perfect children, her sister, Christine Hughes, a very down-to-earth mother of two, continually reminds her that life will never be perfect. Christine's husband, Jimmy, often feels compelled to share with his brother-in-law his philosophy about being a husband and a parent while still remaining a man.",
+   "poster_path": "/bEcwkwonvM9OSnfYFtOmhRFHuoZ.jpg",
+   "backdrop_path": "/k1V2SmjkSO0eryZPEZtKmcHG0yS.jpg",
+   "vote_average": 6.8,
+   "vote_count": 44,
+   "genres": [
+    "Comedy"
+   ],
+   "sources": [
+    "Arrested Development",
+    "Bob's Burgers",
+    "Frasier",
+    "Happy Endings",
+    "How I Met Your Mother",
+    "Kevin Can Wait",
+    "Married... with Children",
+    "Mom",
+    "The King of Queens",
+    "The Neighborhood"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/4599",
+   "imdb_url": "https://www.imdb.com/title/tt0247144/"
+  },
+  {
+   "rank": 32,
+   "content_id": "tt28104766",
+   "content_type": "series",
+   "name": "Squid Game: The Challenge",
+   "year": "2023",
+   "overview": "In this reality competition show inspired by \"Squid Game,\" 456 players put their skills to the ultimate test for a life-changing $4.56 million prize.",
+   "poster_path": "/eAjXAgdjPMZH9Ugub7XYPowFoS1.jpg",
+   "backdrop_path": "/qgYK2c5Yl6h0K7s0ClLa3lIcKuV.jpg",
+   "vote_average": 6.5,
+   "vote_count": 638,
+   "genres": [
+    "Reality"
+   ],
+   "sources": [
+    "90 Day Fiancé",
+    "90 Day Fiancé: Before the 90 Days",
+    "90 Day Fiancé: Love in Paradise",
+    "90 Day Fiancé: The Other Way",
+    "Love After Lockup",
+    "Married at First Sight",
+    "Married at First Sight Australia",
+    "Married at First Sight: Unmatchables",
+    "Most Shocking",
+    "Rob Dyrdek's Fantasy Factory"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/204082",
+   "imdb_url": "https://www.imdb.com/title/tt28104766/"
+  },
+  {
+   "rank": 33,
+   "content_id": "tt14403178",
+   "content_type": "series",
+   "name": "BEEF",
+   "year": "2023",
+   "overview": "A road rage incident between two strangers — a failing contractor and an unfulfilled entrepreneur — sparks a feud that brings out their darkest impulses.",
+   "poster_path": "/25ih0Xq2zWbxhhKxwhvswKYQyEr.jpg",
+   "backdrop_path": "/2VHbof9yaNhovEnaancBkXEULCT.jpg",
+   "vote_average": 7.8,
+   "vote_count": 972,
+   "genres": [
+    "Comedy",
+    "Drama"
+   ],
+   "sources": [
+    "DTF St. Louis",
+    "Hacks",
+    "Kevin Can F**k Himself",
+    "Shrinking",
+    "Succession",
+    "The Miniature Wife",
+    "The Studio",
+    "You're the Worst",
+    "Your Friends & Neighbors"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/154385",
+   "imdb_url": "https://www.imdb.com/title/tt14403178/"
+  },
+  {
+   "rank": 34,
+   "content_id": "tt0098830",
+   "content_type": "series",
+   "name": "In Living Color",
+   "year": "1990",
+   "overview": "Created by stars Keenen Ivory Wayans and Damon Wayans, this Emmy-winning sketch series offers cutting-edge satire and features a host of talent, including Jamie Foxx, Jim Carrey, David Alan Grier and Tommy Davidson.",
+   "poster_path": "/u5BZEJ9X6L24a1MUAun1SdkOFTn.jpg",
+   "backdrop_path": "/hV1VPEmx2RZSL5XVWdw7U8IhlHo.jpg",
+   "vote_average": 7.6,
+   "vote_count": 136,
+   "genres": [
+    "Comedy"
+   ],
+   "sources": [
+    "Deep Fake Neighbour Wars",
+    "It's Always Sunny in Philadelphia",
+    "Life, Larry and the Pursuit of Unhappiness: an Almost History of America",
+    "Running Point",
+    "St. Denis Medical",
+    "The Daily Show",
+    "The Detour",
+    "The Studio",
+    "Veep"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/4415",
+   "imdb_url": "https://www.imdb.com/title/tt0098830/"
+  },
+  {
+   "rank": 35,
+   "content_id": "tt0773264",
+   "content_type": "series",
+   "name": "Tyler Perry's House of Payne",
+   "year": "2007",
+   "overview": "A multigenerational, working-class family experience life's struggles with faith, love and, most importantly, humor. Curtis, aka 'Pops', the uncle and head of the household, has house and home turned upside down when an unexpected event forces his nephew, CJ, and CJ’s kids to move in, putting three generations under one roof. This chaotic living situation takes its toll on cranky Pops, who is reluctant to have his routine disturbed. In addition to CJ’s family, Pops and Ella’s son, Calvin, a wise-cracking, broke college student, hangs out at home, making it impossible for any peace and quiet. It soon becomes evident just how wide the gap is, as the family tries to find a way to coexist through all of life’s hilarious ups and downs.",
+   "poster_path": "/2NdUdJnZnwI6skvm6OXWrK2D42U.jpg",
+   "backdrop_path": "/4bzSEBjVb3QwPaJ39Rp2gmH9Bug.jpg",
+   "vote_average": 7.6,
+   "vote_count": 64,
+   "genres": [
+    "Comedy"
+   ],
+   "sources": [
+    "Arrested Development",
+    "Bob's Burgers",
+    "Deep Fake Neighbour Wars",
+    "Impractical Jokers",
+    "Married... with Children",
+    "Mom",
+    "Nick Cannon Presents: Wild 'N Out",
+    "The King of Queens",
+    "The Neighborhood"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/3690",
+   "imdb_url": "https://www.imdb.com/title/tt0773264/"
+  },
+  {
+   "rank": 36,
+   "content_id": "tt41508977",
+   "content_type": "series",
+   "name": "Hulk Hogan: Real American",
+   "year": "2026",
+   "overview": "Before he was Hulk Hogan, he was Terry Bollea. Uncover the man behind the legend in this unfiltered documentary featuring his very last interview.",
+   "poster_path": "/pdEEOQystKjHtC71RV6yRobY8bk.jpg",
+   "backdrop_path": "/v5DsZ3fnWSGfcIzt8twiFWz2JbL.jpg",
+   "vote_average": 7.5,
+   "vote_count": 31,
+   "genres": [
+    "Documentary"
+   ],
+   "sources": [
+    "Dancing for the Devil: The 7M TikTok Cult",
+    "Death in Apartment 603: What Happened to Ellen Greenberg?",
+    "History 101",
+    "How to Become a Tyrant",
+    "Michael Jackson: The Verdict",
+    "Pretty Baby: Brooke Shields",
+    "The Last Dance",
+    "This Is Life with Lisa Ling",
+    "Twisted Yoga"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/318880",
+   "imdb_url": "https://www.imdb.com/title/tt41508977/"
+  },
+  {
+   "rank": 37,
+   "content_id": "tt2850386",
+   "content_type": "movie",
+   "name": "The Croods: A New Age",
+   "year": "2020",
+   "overview": "Searching for a safer habitat, the prehistoric Crood family discovers an idyllic, walled-in paradise that meets all of its needs. Unfortunately, they must also learn to live with the Bettermans -- a family that's a couple of steps above the Croods on the evolutionary ladder. As tensions between the new neighbors start to rise, a new threat soon propels both clans on an epic adventure that forces them to embrace their differences, draw strength from one another, and survive together.",
+   "poster_path": "/tbVZ3Sq88dZaCANlUcewQuHQOaE.jpg",
+   "backdrop_path": "/ytTQoYkdpsgtfDWrNFCei8Mfbxu.jpg",
+   "vote_average": 7.4,
+   "vote_count": 4176,
+   "genres": [
+    "Animation",
+    "Family",
+    "Adventure",
+    "Fantasy",
+    "Comedy"
+   ],
+   "sources": [
+    "Cars",
+    "Elemental",
+    "Hoppers",
+    "Minions & Monsters",
+    "The Super Mario Galaxy Movie",
+    "Toy Story 2",
+    "Toy Story 3",
+    "Toy Story 5",
+    "Wonka"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/movie/529203",
+   "imdb_url": "https://www.imdb.com/title/tt2850386/"
+  },
+  {
+   "rank": 38,
+   "content_id": "tt0072519",
+   "content_type": "series",
+   "name": "The Jeffersons",
+   "year": "1975",
+   "overview": "Sitcom following a successful African-American couple, George and Louise “Weezyö Jefferson as they “move on up” from working-class Queens to a ritzy Manhattan apartment. A spin-off of All in the Family.",
+   "poster_path": "/huCetHpJmTa7BnPo6WedWdfl3g5.jpg",
+   "backdrop_path": "/hpNiE5Dbf3RtESQXP0Wxb2rNL89.jpg",
+   "vote_average": 7.3,
+   "vote_count": 123,
+   "genres": [
+    "Comedy",
+    "Family"
+   ],
+   "sources": [
+    "Arrested Development",
+    "Brooklyn Nine-Nine",
+    "Frasier",
+    "Friends",
+    "Happy Endings",
+    "Married... with Children",
+    "Seinfeld",
+    "The King of Queens",
+    "Young Sheldon"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/1964",
+   "imdb_url": "https://www.imdb.com/title/tt0072519/"
+  },
+  {
+   "rank": 39,
+   "content_id": "tt5863126",
+   "content_type": "series",
+   "name": "Last Chance U",
+   "year": "2016",
+   "overview": "In a docuseries set at one of NCAA football's most fertile recruiting grounds, guys with red flags seek to prove their worth on the field and in class.",
+   "poster_path": "/8Gu5OupZlwfO0cwfRgsi1LfdE1i.jpg",
+   "backdrop_path": "/4ugybYZHhPxJD2OSEK9L3biwg7o.jpg",
+   "vote_average": 7.2,
+   "vote_count": 56,
+   "genres": [
+    "Documentary"
+   ],
+   "sources": [
+    "Customer Wars",
+    "Death in Apartment 603: What Happened to Ellen Greenberg?",
+    "History 101",
+    "How to Become a Tyrant",
+    "Michael Jackson: The Verdict",
+    "Pretty Baby: Brooke Shields",
+    "The Last Dance",
+    "This Is Life with Lisa Ling",
+    "Twisted Yoga"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/67027",
+   "imdb_url": "https://www.imdb.com/title/tt5863126/"
+  },
+  {
+   "rank": 40,
+   "content_id": "tt0912343",
+   "content_type": "series",
+   "name": "Tim and Eric Awesome Show, Great Job!",
+   "year": "2007",
+   "overview": "Tim and Eric Awesome Show, Great Job! is an American sketch comedy television series, created by and starring Tim Heidecker and Eric Wareheim, which premiered February 11, 2007 on Cartoon Network's Adult Swim comedy block and ran until May 2010. The program features surrealistic and often satirical humor, public-access television–style musical acts, bizarre faux-commercials, and editing and special effects chosen to make the show appear camp. The program featured a wide range of actors, spanning from stars such as Will Ferrell, John C. Reilly, David Cross, Bob Odenkirk, Will Forte and Zach Galifianakis, to alternative comedians like Neil Hamburger, to television actors like Alan Thicke, celebrity look-alikes and impressionists. The creators of the show have described it as \"the nightmare version of television.\"",
+   "poster_path": "/1dzPN5M6BbT44CTMaXqqkIdhOWK.jpg",
+   "backdrop_path": "/hqzle7QIKvk8PvIMcK1gh9waOH4.jpg",
+   "vote_average": 7.1,
+   "vote_count": 97,
+   "genres": [
+    "Comedy"
+   ],
+   "sources": [
+    "Animal Control",
+    "Deep Fake Neighbour Wars",
+    "Human Resources",
+    "It's Always Sunny in Philadelphia",
+    "Life, Larry and the Pursuit of Unhappiness: an Almost History of America",
+    "Robot Chicken",
+    "Running Point",
+    "St. Denis Medical",
+    "The Detour"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/1229",
+   "imdb_url": "https://www.imdb.com/title/tt0912343/"
+  },
+  {
+   "rank": 41,
+   "content_id": "tt0364151",
+   "content_type": "series",
+   "name": "American Masters",
+   "year": "1986",
+   "overview": "American Masters is a PBS television series which produces biographies on enduring writers, musicians, visual and performing artists, dramatists, filmmakers, and others who have left an indelible impression on the cultural landscape of the United States.",
+   "poster_path": "/dY7zYWlHoctqD5iKbEpv3f07ysO.jpg",
+   "backdrop_path": "/jZGxKCxDbepPaARnSu74Df9UE5Y.jpg",
+   "vote_average": 7.0,
+   "vote_count": 25,
+   "genres": [
+    "Documentary"
+   ],
+   "sources": [
+    "Bring Me the Beauties: A Model Cult",
+    "Capturing Their Killer: The Girls on the High Bridge",
+    "Chimp Crazy",
+    "Fit for TV: The Reality of the Biggest Loser",
+    "John Lennon: Murder Without a Trial",
+    "Naming the Dead",
+    "Neighbors",
+    "Signs of a Psychopath",
+    "The Pike County Murders: A Family Massacre"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/15069",
+   "imdb_url": "https://www.imdb.com/title/tt0364151/"
+  },
+  {
+   "rank": 42,
+   "content_id": "tt9698520",
+   "content_type": "series",
+   "name": "A Black Lady Sketch Show",
+   "year": "2019",
+   "overview": "A narrative series set in a limitless magical reality full of dynamic, hilarious characters and celebrity guests presenting sketches performed by a core cast of black women.",
+   "poster_path": "/sf1BjG7dZGqJCSwEt25v2lzjqVr.jpg",
+   "backdrop_path": "/uXcPWOgj6RGphspYiIau44obMsJ.jpg",
+   "vote_average": 6.9,
+   "vote_count": 43,
+   "genres": [
+    "Comedy"
+   ],
+   "sources": [
+    "Deep Fake Neighbour Wars",
+    "It's Always Sunny in Philadelphia",
+    "Life, Larry and the Pursuit of Unhappiness: an Almost History of America",
+    "Maximum Pleasure Guaranteed",
+    "Pretty Smart",
+    "Running Point",
+    "St. Denis Medical",
+    "The Detour",
+    "Veep"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/90877",
+   "imdb_url": "https://www.imdb.com/title/tt9698520/"
+  },
+  {
+   "rank": 43,
+   "content_id": "tt12408718",
+   "content_type": "series",
+   "name": "Murder in a Small Town",
+   "year": "2024",
+   "overview": "Karl Alberg moves to a quiet coastal town to soothe a psyche that has been battered by big-city police work but finds himself needing to call upon all his skills to solve the murders that continue to wash up on his shore.",
+   "poster_path": "/r8rdmK4vSIhNDQAtbamEFL2kLhG.jpg",
+   "backdrop_path": "/5puZfo53LmwAkqOGObg59X3qmC7.jpg",
+   "vote_average": 6.9,
+   "vote_count": 55,
+   "genres": [
     "Drama",
-    "Mystery"
+    "Crime"
    ],
    "sources": [
     "A Good Girl's Guide to Murder",
     "Cape Fear",
-    "Dexter: Resurrection",
+    "Dexter: New Blood",
+    "Dexter: Original Sin",
     "I Will Find You",
     "Law & Order: Special Victims Unit",
-    "Paradise",
-    "Reacher",
-    "Scandal",
+    "Money Heist",
     "The Witness",
+    "Tracker"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/241549",
+   "imdb_url": "https://www.imdb.com/title/tt12408718/"
+  },
+  {
+   "rank": 44,
+   "content_id": "tt6110648",
+   "content_type": "series",
+   "name": "The Purge",
+   "year": "2018",
+   "overview": "Set in a dystopian America ruled by a totalitarian political party, the series follows several seemingly unrelated characters living in a small city. Tying them all together is a mysterious savior who’s impeccably equipped for everything the night throws at them. As the clock winds down with their fates hanging in the balance, each character is forced to reckon with their pasts as they discover how far they will go to survive the night.",
+   "poster_path": "/9CaS2XFd0Db42grzzVBnWcSkrbg.jpg",
+   "backdrop_path": "/9PARvL1FQtyjNhLF6AT6Oanqg1U.jpg",
+   "vote_average": 6.9,
+   "vote_count": 3401,
+   "genres": [
+    "Mystery",
+    "Crime",
+    "Drama"
+   ],
+   "sources": [
+    "A Good Girl's Guide to Murder",
+    "Dexter: Original Sin",
+    "Dexter: Resurrection",
+    "I Will Find You",
+    "Poker Face",
+    "Scandal",
+    "Tell Me Lies",
     "Tracker",
     "You"
    ],
-   "tmdb_url": "https://www.themoviedb.org/tv/213306",
-   "imdb_url": "https://www.imdb.com/title/tt11794812/"
+   "tmdb_url": "https://www.themoviedb.org/tv/80213",
+   "imdb_url": "https://www.imdb.com/title/tt6110648/"
   },
   {
-   "rank": 8,
+   "rank": 45,
+   "content_id": "tt0046600",
+   "content_type": "series",
+   "name": "Father Knows Best",
+   "year": "1954",
+   "overview": "Family man Jim Anderson copes with the everyday problems among his wife Margaret and their three children as they experience day-to-day changes.",
+   "poster_path": "/5uvDdhz7Fq2OceIbmmOVpk2cSwx.jpg",
+   "backdrop_path": "/lGzltA2baJo3depl1ynoVG7lhdS.jpg",
+   "vote_average": 6.7,
+   "vote_count": 27,
+   "genres": [
+    "Comedy",
+    "Family"
+   ],
+   "sources": [
+    "Arrested Development",
+    "Impractical Jokers",
+    "Kevin Can Wait",
+    "Married... with Children",
+    "Mom",
+    "The King of Queens",
+    "The Neighborhood",
+    "The Simpsons",
+    "Young Sheldon"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/10118",
+   "imdb_url": "https://www.imdb.com/title/tt0046600/"
+  },
+  {
+   "rank": 46,
+   "content_id": "tt0053525",
+   "content_type": "series",
+   "name": "My Three Sons",
+   "year": "1960",
+   "overview": "A widower and aeronautical engineer named Steven Douglas raises three sons with the help of his father-in-law, and later the boys' great-uncle. An adopted son, a stepdaughter, wives, and another generation of sons join the loving family in later seasons.",
+   "poster_path": "/2BGjuEKFtq43P3HeYSPWcX9E5et.jpg",
+   "backdrop_path": "/9Mk99zaaymurtHuYCW6r8SBVXW0.jpg",
+   "vote_average": 6.6,
+   "vote_count": 40,
+   "genres": [
+    "Comedy",
+    "Family"
+   ],
+   "sources": [
+    "Arrested Development",
+    "Frasier",
+    "How I Met Your Father",
+    "How I Met Your Mother",
+    "Married... with Children",
+    "Mom",
+    "The King of Queens",
+    "The Wonder Years",
+    "Young Sheldon"
+   ],
+   "tmdb_url": "https://www.themoviedb.org/tv/1530",
+   "imdb_url": "https://www.imdb.com/title/tt0053525/"
+  },
+  {
+   "rank": 47,
    "content_id": "tt2343157",
    "content_type": "series",
    "name": "Vanderpump Rules",
@@ -253,1178 +1494,94 @@
     "90 Day Fiancé: The Other Way",
     "90 Day Fiancé: What Now?",
     "Cops",
-    "Love After Lockup",
     "Married at First Sight Australia",
     "Married at First Sight: Unmatchables",
-    "Most Shocking",
     "Rob Dyrdek's Fantasy Factory"
    ],
    "tmdb_url": "https://www.themoviedb.org/tv/61581",
    "imdb_url": "https://www.imdb.com/title/tt2343157/"
   },
   {
-   "rank": 9,
-   "content_id": "tt14403178",
-   "content_type": "series",
-   "name": "BEEF",
-   "year": "2023",
-   "overview": "A road rage incident between two strangers — a failing contractor and an unfulfilled entrepreneur — sparks a feud that brings out their darkest impulses.",
-   "poster_path": "/25ih0Xq2zWbxhhKxwhvswKYQyEr.jpg",
-   "backdrop_path": "/2VHbof9yaNhovEnaancBkXEULCT.jpg",
-   "vote_average": 7.8,
-   "vote_count": 968,
-   "genres": [
-    "Comedy",
-    "Drama"
-   ],
-   "sources": [
-    "DTF St. Louis",
-    "Hacks",
-    "Kevin Can F**k Himself",
-    "Margo's Got Money Troubles",
-    "Shrinking",
-    "Succession",
-    "The Miniature Wife",
-    "The Studio",
-    "You're the Worst",
-    "Your Friends & Neighbors"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/154385",
-   "imdb_url": "https://www.imdb.com/title/tt14403178/"
-  },
-  {
-   "rank": 10,
-   "content_id": "tt5396394",
-   "content_type": "series",
-   "name": "American Housewife",
-   "year": "2016",
-   "overview": "A family comedy narrated by Katie, a strong-willed mother, raising her flawed family in a wealthy town filled with perfect wives and their perfect offspring.",
-   "poster_path": "/uDXPOk3fx1kPM1tQdrTdE2f76p2.jpg",
-   "backdrop_path": "/8TLIyltOIjgN1qliQpQ3SCU9DrJ.jpg",
-   "vote_average": 7.7,
-   "vote_count": 178,
-   "genres": [
-    "Comedy"
-   ],
-   "sources": [
-    "Deep Fake Neighbour Wars",
-    "Happy Endings",
-    "How I Met Your Father",
-    "How I Met Your Mother",
-    "Kevin Can Wait",
-    "Married... with Children",
-    "Modern Family",
-    "Mom",
-    "The King of Queens",
-    "The Neighborhood"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/67117",
-   "imdb_url": "https://www.imdb.com/title/tt5396394/"
-  },
-  {
-   "rank": 11,
-   "content_id": "tt5611024",
-   "content_type": "series",
-   "name": "Fool Me Once",
-   "year": "2024",
-   "overview": "When ex-soldier Maya sees her murdered husband on a secret nanny cam, she uncovers a deadly conspiracy that stretches deep into the past.",
-   "poster_path": "/Ertv4WLEyHgi8zN4ldOKgPcGAZ.jpg",
-   "backdrop_path": "/v9OgLxYCq5newNdtF8dQAFENs4l.jpg",
-   "vote_average": 7.1,
-   "vote_count": 505,
-   "genres": [
-    "Drama",
-    "Crime",
-    "Mystery"
-   ],
-   "sources": [
-    "A Good Girl's Guide to Murder",
-    "Cape Fear",
-    "I Will Find You",
-    "Love & Death",
-    "Paradise",
-    "Reacher",
-    "Tell Me Lies",
-    "The Blacklist",
-    "The Witness",
-    "You"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/220801",
-   "imdb_url": "https://www.imdb.com/title/tt5611024/"
-  },
-  {
-   "rank": 12,
-   "content_id": "tt8300324",
-   "content_type": "series",
-   "name": "I AM A KILLER",
-   "year": "2018",
-   "overview": "Death row inmates convicted of capital murder give a firsthand account of their crimes in this documentary series.",
-   "poster_path": "/1dJcf9KiZ1lNgjiTv5H8irIo2Ky.jpg",
-   "backdrop_path": "/x9rh1VOgqoP9fdgB0TJCWwPFgau.jpg",
-   "vote_average": 6.8,
-   "vote_count": 70,
-   "genres": [
-    "Documentary",
-    "Crime"
-   ],
-   "sources": [
-    "American Manhunt: O.J. Simpson",
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Michael Jackson: The Verdict",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Trust Me: The False Prophet",
-    "Worst Ex Ever",
-    "Worst Neighbor Ever",
-    "Worst Roommate Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/81337",
-   "imdb_url": "https://www.imdb.com/title/tt8300324/"
-  },
-  {
-   "rank": 13,
-   "content_id": "tt1934673",
-   "content_type": "series",
-   "name": "Homicide Hunter: Lt Joe Kenda",
-   "year": "2011",
-   "overview": "A non-fiction investigative series of murder cases told through the personal experience of retired detective, Lieutenant Joe Kenda. Through re-enactments, discussions with investigation teams, and interviews with victims' families and other involved persons, the show highlights Kenda's successes with his 400 homicide case history and 92 percent solution rate.",
-   "poster_path": "/6QDuvq9GDGpau3lksoedlfNV4OZ.jpg",
-   "backdrop_path": "/zcm2LHVvoKc0eHO4u9NZeFVoZLS.jpg",
-   "vote_average": 8.9,
-   "vote_count": 49,
-   "genres": [
-    "Documentary",
-    "Crime"
-   ],
-   "sources": [
-    "American Manhunt: O.J. Simpson",
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Trust Me: The False Prophet",
-    "Worst Ex Ever",
-    "Worst Neighbor Ever",
-    "Worst Roommate Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/62168",
-   "imdb_url": "https://www.imdb.com/title/tt1934673/"
-  },
-  {
-   "rank": 14,
-   "content_id": "tt21946032",
-   "content_type": "series",
-   "name": "Conversations with a Killer: The Jeffrey Dahmer Tapes",
-   "year": "2022",
-   "overview": "Serial killer Jeffrey Dahmer confesses to his gruesome crimes in unguarded interviews, offering an unsettling view into a disturbed mind.",
-   "poster_path": "/hsdNCScC2rk23fLuHNNgBXtI891.jpg",
-   "backdrop_path": "/42iDbOtqWqPvI3FnP3KafLFrQq.jpg",
-   "vote_average": 7.8,
-   "vote_count": 283,
-   "genres": [
-    "Documentary",
-    "Crime"
-   ],
-   "sources": [
-    "American Manhunt: O.J. Simpson",
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Trust Me: The False Prophet",
-    "Worst Ex Ever",
-    "Worst Neighbor Ever",
-    "Worst Roommate Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/209167",
-   "imdb_url": "https://www.imdb.com/title/tt21946032/"
-  },
-  {
-   "rank": 15,
-   "content_id": "tt6143796",
-   "content_type": "series",
-   "name": "Workin' Moms",
-   "year": "2017",
-   "overview": "Four women juggle love, careers, and parenthood. They support, challenge, and try not to judge each other as life throws them curveballs. Whether it is an identity crisis, a huge job opportunity, postpartum depression, or an unplanned pregnancy – they face both the good and bad with grace and humour.",
-   "poster_path": "/1TJkVKx7IeLadTFxOpUN3QEGI7Z.jpg",
-   "backdrop_path": "/mANwSZL2IybGu12l6JT0bImiD7s.jpg",
-   "vote_average": 7.4,
-   "vote_count": 127,
-   "genres": [
-    "Comedy"
-   ],
-   "sources": [
-    "It's Always Sunny in Philadelphia",
-    "Kevin Can F**k Himself",
-    "Margo's Got Money Troubles",
-    "Maximum Pleasure Guaranteed",
-    "Rooster",
-    "Running Point",
-    "The Detour",
-    "Veep",
-    "Younger"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/69555",
-   "imdb_url": "https://www.imdb.com/title/tt6143796/"
-  },
-  {
-   "rank": 16,
-   "content_id": "tt0072519",
-   "content_type": "series",
-   "name": "The Jeffersons",
-   "year": "1975",
-   "overview": "Sitcom following a successful African-American couple, George and Louise “Weezyö Jefferson as they “move on up” from working-class Queens to a ritzy Manhattan apartment. A spin-off of All in the Family.",
-   "poster_path": "/huCetHpJmTa7BnPo6WedWdfl3g5.jpg",
-   "backdrop_path": "/hpNiE5Dbf3RtESQXP0Wxb2rNL89.jpg",
-   "vote_average": 7.3,
-   "vote_count": 123,
-   "genres": [
-    "Comedy",
-    "Family"
-   ],
-   "sources": [
-    "Brooklyn Nine-Nine",
-    "Frasier",
-    "Friends",
-    "Happy Endings",
-    "How I Met Your Mother",
-    "Married... with Children",
-    "Seinfeld",
-    "The King of Queens",
-    "Young Sheldon"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/1964",
-   "imdb_url": "https://www.imdb.com/title/tt0072519/"
-  },
-  {
-   "rank": 17,
-   "content_id": "tt0046600",
-   "content_type": "series",
-   "name": "Father Knows Best",
-   "year": "1954",
-   "overview": "Family man Jim Anderson copes with the everyday problems among his wife Margaret and their three children as they experience day-to-day changes.",
-   "poster_path": "/5uvDdhz7Fq2OceIbmmOVpk2cSwx.jpg",
-   "backdrop_path": "/lGzltA2baJo3depl1ynoVG7lhdS.jpg",
-   "vote_average": 6.7,
-   "vote_count": 27,
-   "genres": [
-    "Comedy",
-    "Family"
-   ],
-   "sources": [
-    "Impractical Jokers",
-    "Kevin Can Wait",
-    "Married... with Children",
-    "Modern Family",
-    "Mom",
-    "The King of Queens",
-    "The Neighborhood",
-    "The Simpsons",
-    "Young Sheldon"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/10118",
-   "imdb_url": "https://www.imdb.com/title/tt0046600/"
-  },
-  {
-   "rank": 18,
-   "content_id": "tt0053525",
-   "content_type": "series",
-   "name": "My Three Sons",
-   "year": "1960",
-   "overview": "A widower and aeronautical engineer named Steven Douglas raises three sons with the help of his father-in-law, and later the boys' great-uncle. An adopted son, a stepdaughter, wives, and another generation of sons join the loving family in later seasons.",
-   "poster_path": "/2BGjuEKFtq43P3HeYSPWcX9E5et.jpg",
-   "backdrop_path": "/9Mk99zaaymurtHuYCW6r8SBVXW0.jpg",
-   "vote_average": 6.6,
-   "vote_count": 40,
-   "genres": [
-    "Comedy",
-    "Family"
-   ],
-   "sources": [
-    "Frasier",
-    "How I Met Your Father",
-    "How I Met Your Mother",
-    "Married... with Children",
-    "Mom",
-    "The King of Queens",
-    "The Simpsons",
-    "The Wonder Years",
-    "Young Sheldon"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/1530",
-   "imdb_url": "https://www.imdb.com/title/tt0053525/"
-  },
-  {
-   "rank": 19,
-   "content_id": "tt0103396",
-   "content_type": "series",
-   "name": "Dateline",
-   "year": "1992",
-   "overview": "Dateline NBC, or simply Dateline, is a weekly American television newsmagazine series. It was previously the network's flagship newsmagazine, but now focuses mainly on true crime stories with only occasional editions that focus on other topics.",
-   "poster_path": "/xj9zonhdomfBpEhZQmAON5u3CiB.jpg",
-   "backdrop_path": "/4m8QH2C6hBQQ08EgwaOtOv7ATFh.jpg",
-   "vote_average": 6.5,
-   "vote_count": 51,
-   "genres": [
-    "Crime",
-    "Documentary"
-   ],
-   "sources": [
-    "American Manhunt: O.J. Simpson",
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Trust Me: The False Prophet",
-    "Worst Ex Ever",
-    "Worst Neighbor Ever",
-    "Worst Roommate Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/78",
-   "imdb_url": "https://www.imdb.com/title/tt0103396/"
-  },
-  {
-   "rank": 20,
-   "content_id": "tt14396056",
-   "content_type": "series",
-   "name": "What Happened, Brittany Murphy?",
-   "year": "2021",
-   "overview": "An in-depth, intimate character portrait exploring the life and career and mysterious circumstances surrounding the tragic death of 90’s actress and rising star, Brittany Murphy. The series goes beyond the conspiracy theories and headlines, featuring new interviews by those closest to Brittany and new archival footage.",
-   "poster_path": "/wvjooU9XSedeinHoQKJe9a7MkpS.jpg",
-   "backdrop_path": "/polN0UlINjmBGRYUbALLtQyn6kk.jpg",
-   "vote_average": 6.0,
-   "vote_count": 35,
-   "genres": [
-    "Documentary",
-    "Crime"
-   ],
-   "sources": [
-    "American Manhunt: O.J. Simpson",
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Michael Jackson: The Verdict",
-    "Most Evil",
-    "Pretty Baby: Brooke Shields",
-    "Should I Marry a Murderer?",
-    "This Is Life with Lisa Ling",
-    "Trust Me: The False Prophet",
-    "Worst Neighbor Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/131875",
-   "imdb_url": "https://www.imdb.com/title/tt14396056/"
-  },
-  {
-   "rank": 21,
-   "content_id": "tt6459472",
-   "content_type": "series",
-   "name": "Cold Case Files",
-   "year": "2017",
-   "overview": "There are over 100,000 cold cases in America, and only about 1% are ever solved. With recent advancements in technology and the methods used to solve these cases, as well as the unwavering dedication of victims’ families, law enforcement and the public, “Cold Case Files” explores the cases that defied the odds. Each episode of the Emmy-nominated series examines the twists and turns of one murder case that remained unsolved for years, and the critical element that heated it up, leading to the evidence that finally solved it. Featuring interviews with family members, friends, detectives, and others close to the cases, the refreshed classic series examines all facets of the crime and shines a light on a range of voices and victims.",
-   "poster_path": "/ehmyF13Wre9bLcOR11BrmNakfc8.jpg",
-   "backdrop_path": "/yElRqLB6Iw1qAPTGdVT33Qym4rm.jpg",
-   "vote_average": 7.9,
-   "vote_count": 31,
-   "genres": [
-    "Crime",
-    "Mystery",
-    "Documentary"
-   ],
-   "sources": [
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Trust Me: The False Prophet",
-    "Worst Ex Ever",
-    "Worst Neighbor Ever",
-    "Worst Roommate Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/90686",
-   "imdb_url": "https://www.imdb.com/title/tt6459472/"
-  },
-  {
-   "rank": 22,
-   "content_id": "tt5574490",
-   "content_type": "series",
-   "name": "Animal Kingdom",
-   "year": "2016",
-   "overview": "17-year-old Joshua \"J\" Cody moves in with his freewheeling relatives in their Southern California beach town after his mother dies of a heroin overdose. Headed by boot-tough matriarch Janine \"Smurf\" Cody and her right-hand Baz, who runs the business and calls the shots, the clan also consists of Pope, the oldest and most dangerous of the Cody boys; Craig, the tough and fearless middle son; and Deran, the troubled, suspicious \"baby\" of the family.",
-   "poster_path": "/rzvdKrnSRKPFI0pgqMQknDPpRC9.jpg",
-   "backdrop_path": "/eQJwfyMqSra10ck8HOoiCrbQR32.jpg",
-   "vote_average": 7.8,
-   "vote_count": 552,
-   "genres": [
-    "Crime",
-    "Drama"
-   ],
-   "sources": [
-    "Better Call Saul",
-    "Euphoria",
-    "Margo's Got Money Troubles",
-    "Prison Break",
-    "Revenge",
-    "S.W.A.T.",
-    "The Sopranos",
-    "This Is Us"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/66025",
-   "imdb_url": "https://www.imdb.com/title/tt5574490/"
-  },
-  {
-   "rank": 23,
-   "content_id": "tt8323628",
-   "content_type": "series",
-   "name": "My Life with the Walter Boys",
-   "year": "2023",
-   "overview": "When a tragedy disrupts her life, a teen moves in with her guardian's big family in a small town and learns new lessons about love, hope and friendship.",
-   "poster_path": "/jg3YdxDNlxay0NWTxgAPif647Hj.jpg",
-   "backdrop_path": "/5WUsnqUm7xbY3oSwumSLfjyyax.jpg",
-   "vote_average": 7.8,
-   "vote_count": 372,
-   "genres": [
-    "Drama"
-   ],
-   "sources": [
-    "Euphoria",
-    "It's Not Like That",
-    "One Tree Hill",
-    "Scandal",
-    "Sweet Magnolias",
-    "Ted Lasso",
-    "This Is Us",
-    "Tracker"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/199001",
-   "imdb_url": "https://www.imdb.com/title/tt8323628/"
-  },
-  {
-   "rank": 24,
-   "content_id": "tt0098830",
-   "content_type": "series",
-   "name": "In Living Color",
-   "year": "1990",
-   "overview": "Created by stars Keenen Ivory Wayans and Damon Wayans, this Emmy-winning sketch series offers cutting-edge satire and features a host of talent, including Jamie Foxx, Jim Carrey, David Alan Grier and Tommy Davidson.",
-   "poster_path": "/u5BZEJ9X6L24a1MUAun1SdkOFTn.jpg",
-   "backdrop_path": "/hV1VPEmx2RZSL5XVWdw7U8IhlHo.jpg",
-   "vote_average": 7.6,
-   "vote_count": 136,
-   "genres": [
-    "Comedy"
-   ],
-   "sources": [
-    "Deep Fake Neighbour Wars",
-    "It's Always Sunny in Philadelphia",
-    "Running Point",
-    "St. Denis Medical",
-    "The Daily Show",
-    "The Detour",
-    "The Studio",
-    "Veep"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/4415",
-   "imdb_url": "https://www.imdb.com/title/tt0098830/"
-  },
-  {
-   "rank": 25,
-   "content_id": "tt0772137",
-   "content_type": "series",
-   "name": "The Game",
-   "year": "2006",
-   "overview": "When her boyfriend Derwin Davis is chosen as the new third-string wide receiver for the San Diego Sabers, Melanie Barnett decides to attend a local college so she can be with him. While Derwin worries about the plays on the field, Melanie adjusts to her new lifestyle. She gets a play-by-play account of the lives and relationships among NFL wives, girlfriends and mom/managers who use their best game to help their men stay on the field and on their arm.",
-   "poster_path": "/zmvRaCRcmi6lsriYxZmAR6uWHPS.jpg",
-   "backdrop_path": "/lW3RCsfXXVGIBXyupMGT7dAYcze.jpg",
-   "vote_average": 7.6,
-   "vote_count": 42,
-   "genres": [
-    "Drama",
-    "Comedy"
-   ],
-   "sources": [
-    "All's Fair",
-    "Kevin Can F**k Himself",
-    "Margo's Got Money Troubles",
-    "Ted Lasso",
-    "The Miniature Wife",
-    "The Studio",
-    "Younger",
-    "Your Friends & Neighbors"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/211",
-   "imdb_url": "https://www.imdb.com/title/tt0772137/"
-  },
-  {
-   "rank": 26,
-   "content_id": "tt0085050",
-   "content_type": "series",
-   "name": "Mama's Family",
-   "year": "1983",
-   "overview": "Thelma Harper and her spinster sister Fran open their home to Thelma's recently divorced son Vinton and his teenage son and daughter. It's quite an adjustment for everyone, especially the cranky, argumentative Thelma.",
-   "poster_path": "/hRzbRLRJ8VgEJyTVyoVwDfGOfVr.jpg",
-   "backdrop_path": "/eLIhwHOLBDeHoJFFHX4MddAJqdD.jpg",
-   "vote_average": 7.5,
-   "vote_count": 51,
-   "genres": [
-    "Comedy"
-   ],
-   "sources": [
-    "How I Met Your Father",
-    "Kevin Can Wait",
-    "Married... with Children",
-    "Modern Family",
-    "Mom",
-    "Nick Cannon Presents: Wild 'N Out",
-    "The King of Queens",
-    "The Neighborhood"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/2016",
-   "imdb_url": "https://www.imdb.com/title/tt0085050/"
-  },
-  {
-   "rank": 27,
-   "content_id": "tt1416765",
-   "content_type": "series",
-   "name": "Parenthood",
-   "year": "2010",
-   "overview": "The trials and tribulations of the very large, colorful and imperfect Braverman family.",
-   "poster_path": "/9KjKLJrrUI1sU9bNsQaQ5H8kTyY.jpg",
-   "backdrop_path": "/72zLfNDaL8JpfLDwmQ2b8DPbeHc.jpg",
-   "vote_average": 7.5,
-   "vote_count": 182,
-   "genres": [
-    "Drama"
-   ],
-   "sources": [
-    "90 Day: The Single Life",
-    "Boston Public",
-    "Brothers & Sisters",
-    "Dawson's Creek",
-    "Downton Abbey",
-    "The Good Wife",
-    "The Last Man on Earth",
-    "The O.C."
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/21762",
-   "imdb_url": "https://www.imdb.com/title/tt1416765/"
-  },
-  {
-   "rank": 28,
-   "content_id": "tt12408718",
-   "content_type": "series",
-   "name": "Murder in a Small Town",
-   "year": "2024",
-   "overview": "Karl Alberg moves to a quiet coastal town to soothe a psyche that has been battered by big-city police work but finds himself needing to call upon all his skills to solve the murders that continue to wash up on his shore.",
-   "poster_path": "/r8rdmK4vSIhNDQAtbamEFL2kLhG.jpg",
-   "backdrop_path": "/5puZfo53LmwAkqOGObg59X3qmC7.jpg",
-   "vote_average": 6.9,
-   "vote_count": 54,
-   "genres": [
-    "Drama",
-    "Crime"
-   ],
-   "sources": [
-    "A Good Girl's Guide to Murder",
-    "Cape Fear",
-    "I Will Find You",
-    "Law & Order: Special Victims Unit",
-    "Money Heist",
-    "Tell Me Lies",
-    "The Witness",
-    "Tracker"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/241549",
-   "imdb_url": "https://www.imdb.com/title/tt12408718/"
-  },
-  {
-   "rank": 29,
-   "content_id": "tt0285335",
-   "content_type": "series",
-   "name": "The Amazing Race",
-   "year": "2001",
-   "overview": "This reality competition sees teams embark on a trek around the world to amazing destinations where they must compete in a series of challenges, some mental and some physical. Only when the tasks are completed will they learn of their next location. Teams who are the farthest behind will gradually be eliminated as the contest progresses, with the first team to arrive at the final destination winning the race and the $1 million prize.",
-   "poster_path": "/x1jq0atcQg6UkaZpco0kFL6QHuM.jpg",
-   "backdrop_path": "/mSkisNewxu55Ivar5EubhcIuoqn.jpg",
-   "vote_average": 6.9,
-   "vote_count": 166,
-   "genres": [
-    "Reality"
-   ],
-   "sources": [
-    "90 Day Fiancé",
-    "90 Day Fiancé: Before the 90 Days",
-    "90 Day: The Last Resort",
-    "Love After Lockup",
-    "Married at First Sight",
-    "Married at First Sight Australia",
-    "Married at First Sight: Unmatchables",
-    "Rob Dyrdek's Fantasy Factory"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/30957",
-   "imdb_url": "https://www.imdb.com/title/tt0285335/"
-  },
-  {
-   "rank": 30,
-   "content_id": "tt0765425",
-   "content_type": "series",
-   "name": "Top Chef",
-   "year": "2006",
-   "overview": "An American reality competition show in which chefs compete against each other in culinary challenges and are judged by a panel of professional chefs and other notables from the food and wine industry with one or more contestants eliminated in each episode.",
-   "poster_path": "/z61ri5TRlMCdFLlcdOnyQt4OzAd.jpg",
-   "backdrop_path": "/1fXznFH7cmHxSli5PRbnNvvte3Y.jpg",
-   "vote_average": 6.9,
-   "vote_count": 69,
-   "genres": [
-    "Reality"
-   ],
-   "sources": [
-    "90 Day Fiancé: Before the 90 Days",
-    "90 Day Fiancé: Love in Paradise",
-    "90 Day Fiancé: The Other Way",
-    "Love After Lockup",
-    "Married at First Sight Australia",
-    "Married at First Sight: Unmatchables",
-    "Most Shocking",
-    "Rob Dyrdek's Fantasy Factory"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/41822",
-   "imdb_url": "https://www.imdb.com/title/tt0765425/"
-  },
-  {
-   "rank": 31,
-   "content_id": "tt23553310",
-   "content_type": "series",
-   "name": "Crime Scene: The Texas Killing Fields",
-   "year": "2022",
-   "overview": "An overgrown field and a stretch of highway connect a series of grisly murders spanning several decades as grieving families search for answers.",
-   "poster_path": "/lIQN4JWtO0opwEVdUOtMqU3Yaaz.jpg",
-   "backdrop_path": "/ySSEzqy2FtKygS5QiZjbXJvYhgK.jpg",
-   "vote_average": 6.4,
-   "vote_count": 86,
-   "genres": [
-    "Documentary",
-    "Crime"
-   ],
-   "sources": [
-    "American Manhunt: O.J. Simpson",
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Trust Me: The False Prophet",
-    "Worst Ex Ever",
-    "Worst Neighbor Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/214180",
-   "imdb_url": "https://www.imdb.com/title/tt23553310/"
-  },
-  {
-   "rank": 32,
-   "content_id": "tt11363282",
-   "content_type": "series",
-   "name": "The Real Housewives of Salt Lake City",
-   "year": "2020",
-   "overview": "Fueled by multi-million-dollar businesses and brands, a hidden social circle of successful women have created their own paradise in the majestic mountains of Utah.",
-   "poster_path": "/1tQ2wVVKoma672CxE2kfl9oxHR8.jpg",
-   "backdrop_path": "/52C5LxFmg4z0dSUUbYnLhJij0Jv.jpg",
-   "vote_average": 6.2,
-   "vote_count": 25,
-   "genres": [
-    "Reality"
-   ],
-   "sources": [
-    "90 Day Fiancé: Before the 90 Days",
-    "90 Day Fiancé: Love in Paradise",
-    "90 Day Fiancé: The Other Way",
-    "90 Day: The Last Resort",
-    "Married at First Sight",
-    "Married at First Sight Australia",
-    "Married at First Sight: Unmatchables",
-    "Rob Dyrdek's Fantasy Factory"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/110381",
-   "imdb_url": "https://www.imdb.com/title/tt11363282/"
-  },
-  {
-   "rank": 33,
-   "content_id": "tt31019484",
-   "content_type": "series",
-   "name": "Missing You",
-   "year": "2025",
-   "overview": "When Detective Kat Donovan matches on a dating app with the fiancé who disappeared years before, she learns that some secrets are best left in the past.",
-   "poster_path": "/aEiqusZEqOrqHmRtOninChmcOG0.jpg",
-   "backdrop_path": "/iC92jNOuhxSIGTFoMmAjtyaNOGV.jpg",
-   "vote_average": 6.1,
-   "vote_count": 153,
-   "genres": [
-    "Drama",
-    "Crime",
-    "Mystery"
-   ],
-   "sources": [
-    "A Good Girl's Guide to Murder",
-    "Cape Fear",
-    "Dexter: Resurrection",
-    "I Will Find You",
-    "Love & Death",
-    "Reacher",
-    "The Witness",
-    "You"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/244243",
-   "imdb_url": "https://www.imdb.com/title/tt31019484/"
-  },
-  {
-   "rank": 34,
-   "content_id": "tt1688779",
-   "content_type": "series",
-   "name": "Drugs, Inc.",
-   "year": "2010",
-   "overview": "Drugs: A multi-billion-dollar industry that fuels crime and violence like no other substance on the planet. Turning cartel leaders into billionaires, the illegal drug industry also provides vital income to hundreds of thousands of poor workers across the globe. While some users sacrifice their lives to an addiction they can't escape, others find drugs to be their only saving grace from physical or emotional pain almost impossible to overcome. Where should the lines be drawn in this lucrative industry?",
-   "poster_path": "/qGZlkIMVyV3Jnh2L3zvnSF8A8gW.jpg",
-   "backdrop_path": "/zSoBMuC8aaEqjv1zDmHCkh2nzv5.jpg",
-   "vote_average": 8.3,
-   "vote_count": 28,
-   "genres": [
-    "Documentary",
-    "Crime"
-   ],
-   "sources": [
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Michael Jackson: The Verdict",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Trust Me: The False Prophet",
-    "Worst Neighbor Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/36105",
-   "imdb_url": "https://www.imdb.com/title/tt1688779/"
-  },
-  {
-   "rank": 35,
-   "content_id": "tt5489746",
-   "content_type": "series",
-   "name": "Evil Lives Here",
-   "year": "2016",
-   "overview": "The true stories of people who lived with a killer. How well do you really know your family? Would you recognize the warning signs? Or would you become entangled in evil?",
-   "poster_path": "/tL5jRxrflh2et3whDxyXgRHEnGJ.jpg",
-   "backdrop_path": "/tCvdyHIYon3f7hRXIeeVrlvD1ui.jpg",
-   "vote_average": 8.0,
-   "vote_count": 43,
-   "genres": [
-    "Crime",
-    "Documentary"
-   ],
-   "sources": [
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Worst Ex Ever",
-    "Worst Neighbor Ever",
-    "Worst Roommate Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/70249",
-   "imdb_url": "https://www.imdb.com/title/tt5489746/"
-  },
-  {
-   "rank": 36,
-   "content_id": "tt9054904",
-   "content_type": "series",
-   "name": "Why Women Kill",
-   "year": "2019",
-   "overview": "Three women living in three different decades: a housewife in the '60s, a socialite in the '80s and a lawyer in 2018, deal with infidelity in their marriages.",
-   "poster_path": "/fI3E1G5N8oimMeyYn5UzWRT2cST.jpg",
-   "backdrop_path": "/61YttrsiP6B4sJo98HFMuHKPV3G.jpg",
-   "vote_average": 7.9,
-   "vote_count": 391,
-   "genres": [
-    "Comedy",
-    "Crime",
-    "Drama"
-   ],
-   "sources": [
-    "DTF St. Louis",
-    "Kevin Can F**k Himself",
-    "Margo's Got Money Troubles",
-    "Shrinking",
-    "The Miniature Wife",
-    "You're the Worst",
-    "Your Friends & Neighbors"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/87428",
-   "imdb_url": "https://www.imdb.com/title/tt9054904/"
-  },
-  {
-   "rank": 37,
-   "content_id": "tt6474378",
-   "content_type": "series",
-   "name": "Good Girls",
-   "year": "2018",
-   "overview": "Three \"good girl\" suburban wives and mothers suddenly find themselves in desperate circumstances and decide to stop playing it safe and risk everything to take their power back.",
-   "poster_path": "/wpgg6G3UHXepH2Zgpt4W60d6gxR.jpg",
-   "backdrop_path": "/csOIulXwQxsuCFp3ZZ9cYkJmCwH.jpg",
-   "vote_average": 7.8,
-   "vote_count": 694,
-   "genres": [
-    "Drama",
-    "Crime"
-   ],
-   "sources": [
-    "Deli Boys",
-    "Margo's Got Money Troubles",
-    "Revenge",
-    "Scandal",
-    "The Affair",
-    "The Sopranos",
-    "Your Friends & Neighbors"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/71715",
-   "imdb_url": "https://www.imdb.com/title/tt6474378/"
-  },
-  {
-   "rank": 38,
-   "content_id": "tt8577458",
-   "content_type": "series",
-   "name": "High Fidelity",
-   "year": "2020",
-   "overview": "Rob Brooks, a female record store owner in the rapidly gentrified neighborhood of Crown Heights, Brooklyn revisit past relationships through music and pop culture, while trying to get over her one true love.",
-   "poster_path": "/6OTZ66ZlJvOVb5A8ALiPzTD0n3H.jpg",
-   "backdrop_path": "/hvnUOS93FAd7xaMKRYER1yIlSdi.jpg",
-   "vote_average": 7.6,
-   "vote_count": 237,
-   "genres": [
-    "Comedy",
-    "Drama"
-   ],
-   "sources": [
-    "DTF St. Louis",
-    "Hacks",
-    "Margo's Got Money Troubles",
-    "The Miniature Wife",
-    "The Studio",
-    "You're the Worst",
-    "Younger"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/96734",
-   "imdb_url": "https://www.imdb.com/title/tt8577458/"
-  },
-  {
-   "rank": 39,
-   "content_id": "tt2402569",
-   "content_type": "series",
-   "name": "Cold Justice",
-   "year": "2013",
-   "overview": "From Executive Producer Dick Wolf, this true crime investigative series follows veteran prosecutor Kelly Siegler, and her rotating team of seasoned detectives, as they travel to small towns across the country and help local law-enforcement agencies dig into unsolved homicide cases that have lingered for years without answers or justice for the victims due to lack of funding and proper forensic technology.",
-   "poster_path": "/gfJL3QtpHvHtxkLA9WBzkYhzAGA.jpg",
-   "backdrop_path": "/aTvLuNGRSBrFcQPlOnYy7YVy5lu.jpg",
-   "vote_average": 7.5,
-   "vote_count": 37,
-   "genres": [
-    "Crime",
-    "Documentary"
-   ],
-   "sources": [
-    "American Manhunt: O.J. Simpson",
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Worst Ex Ever",
-    "Worst Neighbor Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/58818",
-   "imdb_url": "https://www.imdb.com/title/tt2402569/"
-  },
-  {
-   "rank": 40,
-   "content_id": "tt0983514",
-   "content_type": "series",
-   "name": "Kitchen Nightmares",
-   "year": "2007",
-   "overview": "Chef Ramsay attempts to do the impossible: turn one ordinary and empty restaurant into the most popular, sought-after venue in town. There's no time for polite small talk as he embarks on his mission to turn around the fortunes of each restaurant in just one week and save them from their living nightmares.",
-   "poster_path": "/10XpD4aEOExWcOg9bxCA28NNsMQ.jpg",
-   "backdrop_path": "/qlW9Yt3msYeX5odVaTbiX6sPlYm.jpg",
-   "vote_average": 7.5,
-   "vote_count": 180,
-   "genres": [
-    "Reality"
-   ],
-   "sources": [
-    "90 Day Fiancé: Before the 90 Days",
-    "90 Day Fiancé: Love in Paradise",
-    "90 Day Fiancé: The Other Way",
-    "Love After Lockup",
-    "Married at First Sight Australia",
-    "Most Shocking",
-    "Rob Dyrdek's Fantasy Factory"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/11294",
-   "imdb_url": "https://www.imdb.com/title/tt0983514/"
-  },
-  {
-   "rank": 41,
-   "content_id": "tt0176095",
-   "content_type": "series",
-   "name": "The Challenge",
-   "year": "1998",
-   "overview": "Each Challenge pits numerous cast members from past seasons of reality shows against each other, dividing them into two separate teams according to different criteria, such as gender, which show they first appeared on, whether or not they're veterans or rookies on the show, etc. The two teams compete in numerous missions in order to win prizes and advance in the overall game.",
-   "poster_path": "/gHglz5TlLvHyP4Y680ofcoM8uFc.jpg",
-   "backdrop_path": "/bapuJxfX6zMKHv2i36cItnvGeHi.jpg",
-   "vote_average": 7.2,
-   "vote_count": 77,
-   "genres": [
-    "Reality"
-   ],
-   "sources": [
-    "90 Day Fiancé",
-    "90 Day Fiancé: Happily Ever After?",
-    "90 Day Fiancé: What Now?",
-    "90 Day: The Last Resort",
-    "Cops",
-    "Married at First Sight",
-    "Married at First Sight: Happily Ever After"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/62",
-   "imdb_url": "https://www.imdb.com/title/tt0176095/"
-  },
-  {
-   "rank": 42,
-   "content_id": "tt13366604",
-   "content_type": "series",
-   "name": "Platonic",
-   "year": "2023",
-   "overview": "A platonic pair of former best friends approaching midlife reconnect after a long rift. The duo’s friendship becomes more consuming—and destabilizes their lives in a hilarious way.",
-   "poster_path": "/7G8wB9CG82nITeFwRFIRSk0sQJs.jpg",
-   "backdrop_path": "/aZerXLRyZMuGjQXI61f2CmSig7o.jpg",
-   "vote_average": 6.9,
-   "vote_count": 208,
-   "genres": [
-    "Comedy"
-   ],
-   "sources": [
-    "Animal Control",
-    "It's Always Sunny in Philadelphia",
-    "Running Point",
-    "St. Denis Medical",
-    "Ted Lasso",
-    "The Studio",
-    "Veep"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/112211",
-   "imdb_url": "https://www.imdb.com/title/tt13366604/"
-  },
-  {
-   "rank": 43,
-   "content_id": "tt11823076",
-   "content_type": "series",
-   "name": "Tiger King",
-   "year": "2020",
-   "overview": "A zoo owner spirals out of control amid a cast of eccentric characters in this true murder-for-hire story from the underworld of big cat breeding.",
-   "poster_path": "/dXQCEjVth8P8L47XIsoRt0oL8Gw.jpg",
-   "backdrop_path": "/8GGD7djS6oqTWcKwJb3uT833xeA.jpg",
-   "vote_average": 6.9,
-   "vote_count": 588,
-   "genres": [
-    "Documentary",
-    "Crime"
-   ],
-   "sources": [
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Should I Marry a Murderer?",
-    "This Is Life with Lisa Ling",
-    "Trust Me: The False Prophet",
-    "Worst Ex Ever",
-    "Worst Neighbor Ever",
-    "Worst Roommate Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/100698",
-   "imdb_url": "https://www.imdb.com/title/tt11823076/"
-  },
-  {
-   "rank": 44,
-   "content_id": "tt30826447",
-   "content_type": "series",
-   "name": "The Four Seasons",
-   "year": "2025",
-   "overview": "The decades-long friendship between three married couples is tested when one divorces, complicating their tradition of quarterly weekend getaways.",
-   "poster_path": "/w09XeYl096pwES8riRMZwEA9rnh.jpg",
-   "backdrop_path": "/xJATsbyFLf4LMtJBOco08RNxqPE.jpg",
-   "vote_average": 6.8,
-   "vote_count": 165,
-   "genres": [
-    "Comedy"
-   ],
-   "sources": [
-    "It's Always Sunny in Philadelphia",
-    "Kevin Can F**k Himself",
-    "Maximum Pleasure Guaranteed",
-    "Pretty Smart",
-    "Rooster",
-    "Ted Lasso",
-    "The Detour"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/243316",
-   "imdb_url": "https://www.imdb.com/title/tt30826447/"
-  },
-  {
-   "rank": 45,
-   "content_id": "tt0247144",
-   "content_type": "series",
-   "name": "Yes, Dear",
-   "year": "2000",
-   "overview": "A comedy about two young couples and their outrageously contrasting views on parenting. Greg and Kim Warner struggle on a daily basis to become perfect at the job. Kim is a neurotic, stay-at-home mother, and although her husband, Greg, is a success in his career, his more difficult job is keeping his wife calm as they raise their two young children. While Kim is determined to be the perfect mother and perfect wife and to raise the perfect children, her sister, Christine Hughes, a very down-to-earth mother of two, continually reminds her that life will never be perfect. Christine's husband, Jimmy, often feels compelled to share with his brother-in-law his philosophy about being a husband and a parent while still remaining a man.",
-   "poster_path": "/bEcwkwonvM9OSnfYFtOmhRFHuoZ.jpg",
-   "backdrop_path": "/k1V2SmjkSO0eryZPEZtKmcHG0yS.jpg",
-   "vote_average": 6.8,
-   "vote_count": 44,
-   "genres": [
-    "Comedy"
-   ],
-   "sources": [
-    "Frasier",
-    "Happy Endings",
-    "How I Met Your Mother",
-    "Married... with Children",
-    "Mom",
-    "The King of Queens",
-    "The Neighborhood"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/4599",
-   "imdb_url": "https://www.imdb.com/title/tt0247144/"
-  },
-  {
-   "rank": 46,
-   "content_id": "tt15723914",
-   "content_type": "series",
-   "name": "Catching Killers",
-   "year": "2021",
-   "overview": "The investigators behind infamous serial killer cases reveal the harrowing, chilling details of their extraordinary efforts in this true crime series.",
-   "poster_path": "/628U5ybT3fV0gGbT41Lk3R15Ya0.jpg",
-   "backdrop_path": "/dR8tN9vttcihVKnNUILap9EJZCw.jpg",
-   "vote_average": 6.7,
-   "vote_count": 64,
-   "genres": [
-    "Documentary",
-    "Crime"
-   ],
-   "sources": [
-    "American Manhunt: O.J. Simpson",
-    "Don't F**k with Cats: Hunting an Internet Killer",
-    "Most Evil",
-    "Should I Marry a Murderer?",
-    "This Is the Zodiac Speaking",
-    "Trust Me: The False Prophet",
-    "Worst Ex Ever"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/137003",
-   "imdb_url": "https://www.imdb.com/title/tt15723914/"
-  },
-  {
-   "rank": 47,
-   "content_id": "tt31322085",
-   "content_type": "series",
-   "name": "Sherlock & Daughter",
-   "year": "2025",
-   "overview": "Sherlock Holmes faces a sinister case risking friends' lives. American Amelia joins, seeking her father after her mother's murder. Despite differences, they solve a conspiracy and her mother's case.",
-   "poster_path": "/ifh5NNMzUEqErsHmeKjjGblbOav.jpg",
-   "backdrop_path": "/yyOMIYaHB1xDSULKvT0djOwP4qc.jpg",
-   "vote_average": 6.6,
-   "vote_count": 61,
-   "genres": [
-    "Drama",
-    "Mystery"
-   ],
-   "sources": [
-    "A Good Girl's Guide to Murder",
-    "Dexter: Resurrection",
-    "How to Get Away with Murder",
-    "I Will Find You",
-    "Revenge",
-    "Tell Me Lies",
-    "The Witness"
-   ],
-   "tmdb_url": "https://www.themoviedb.org/tv/246461",
-   "imdb_url": "https://www.imdb.com/title/tt31322085/"
-  },
-  {
    "rank": 48,
-   "content_id": "tt0445912",
+   "content_id": "tt2076566",
    "content_type": "series",
-   "name": "The Ultimate Fighter",
-   "year": "2005",
-   "overview": "The next generation of UFC stars are produced in an intense elimination tournament that separates the contenders from the pretenders.",
-   "poster_path": "/k3NlkqDeYmKTsx7QIQWjXXo0DeW.jpg",
-   "backdrop_path": "/jGWGm5c7cK042VqozW79GF1xVFh.jpg",
-   "vote_average": 6.4,
-   "vote_count": 52,
+   "name": "Mysteries at the Museum",
+   "year": "2010",
+   "overview": "Don Wildman unearths relics from the world's greatest institutions to reveal secrets from the past. He examines each artifact to illuminate history's most incredible triumphs, sensational crimes and bizarre encounters.",
+   "poster_path": "/iJsBQRZoEehX8biph7XkkFjtoM2.jpg",
+   "backdrop_path": "/1dUQ99RH1uiKIUfLKtJ5uGnOxFu.jpg",
+   "vote_average": 8.9,
+   "vote_count": 20,
    "genres": [
-    "Reality"
+    "Documentary"
    ],
    "sources": [
-    "90 Day Fiancé: Before the 90 Days",
-    "90 Day Fiancé: Love in Paradise",
-    "90 Day Fiancé: The Other Way",
-    "Love After Lockup",
-    "Married at First Sight Australia",
-    "Most Shocking",
-    "Rob Dyrdek's Fantasy Factory"
+    "Bring Me the Beauties: A Model Cult",
+    "Capturing Their Killer: The Girls on the High Bridge",
+    "Chimp Crazy",
+    "Fit for TV: The Reality of the Biggest Loser",
+    "John Lennon: Murder Without a Trial",
+    "Signs of a Psychopath",
+    "The Pike County Murders: A Family Massacre",
+    "Wild Crime"
    ],
-   "tmdb_url": "https://www.themoviedb.org/tv/517",
-   "imdb_url": "https://www.imdb.com/title/tt0445912/"
+   "tmdb_url": "https://www.themoviedb.org/tv/38122",
+   "imdb_url": "https://www.imdb.com/title/tt2076566/"
   },
   {
    "rank": 49,
-   "content_id": "tt3205302",
+   "content_id": "tt4189570",
    "content_type": "series",
-   "name": "Beat Bobby Flay",
-   "year": "2013",
-   "overview": "Two talented chefs go head-to-head for the chance to Beat Bobby Flay. To get to Bobby the chefs must first face off against each other, creating a spectacular dish with a secret ingredient of Bobby's choice. Judges Alex Guarnaschelli and Jeff Mauro know Bobby's strengths and his weaknesses. Their goal: Pick the chef who has the skills to take down Bobby Flay in his own arena. The winning chef gets to challenge Bobby with his or her surprise signature dish. If Bobby goes down, the winner can tell the world, \"I beat Bobby Flay!\"",
-   "poster_path": "/vY8Bep9K9oFSz0C9gnTVipfBciU.jpg",
-   "backdrop_path": "/kSFEIZS3HplqY1uN9U1GR0aEKlP.jpg",
-   "vote_average": 6.2,
-   "vote_count": 28,
+   "name": "See No Evil",
+   "year": "2015",
+   "overview": "Every second of every day, millions of Americans are caught on CCTV. Living in a surveillance society means everyday actions are caught on camera, mostly of honest citizens going about their daily lives. But a few are guilty of unspeakable crimes. Video doesn't discriminate; criminals also end up on film. See no Evil is a groundbreaking series that presents dramatic stories about how real crimes are solved with the aid of surveillance cameras. Police reveal how CCTV footage has unlocked the answer to cases that otherwise might have remained unsolved- leaving dangerous killers at large. The series features real footage and dramatic reconstruction, combined with first-hand testimony from police, witnesses, and families.",
+   "poster_path": "/dwYzpyRwf2rytD3PSLProDMLJ1c.jpg",
+   "backdrop_path": "/bCWmUUbj2zjrYnLyhhK0ClDDnth.jpg",
+   "vote_average": 8.1,
+   "vote_count": 42,
    "genres": [
-    "Reality"
+    "Crime",
+    "Documentary"
    ],
    "sources": [
-    "90 Day Fiancé",
-    "90 Day Fiancé: Happily Ever After?",
-    "90 Day Fiancé: What Now?",
-    "90 Day: The Last Resort",
-    "Cops",
-    "Married at First Sight",
-    "Married at First Sight: Happily Ever After"
+    "Crime Scene: The Texas Killing Fields",
+    "Crime Scene: The Times Square Killer",
+    "Don't F**k with Cats: Hunting an Internet Killer",
+    "Most Evil",
+    "Should I Marry a Murderer?",
+    "The Vow",
+    "Worst Ex Ever",
+    "Worst Neighbor Ever"
    ],
-   "tmdb_url": "https://www.themoviedb.org/tv/62481",
-   "imdb_url": "https://www.imdb.com/title/tt3205302/"
+   "tmdb_url": "https://www.themoviedb.org/tv/65824",
+   "imdb_url": "https://www.imdb.com/title/tt4189570/"
   },
   {
    "rank": 50,
-   "content_id": "tt31937954",
+   "content_id": "tt26777035",
    "content_type": "series",
-   "name": "Imperfect Women",
-   "year": "2026",
-   "overview": "After a murder shatters the lives of three best friends, their decades-long bond is tested when an investigation reveals betrayals and shocking truths.",
-   "poster_path": "/wW7rimhnokiQ8V6ha6VKIwHg8IV.jpg",
-   "backdrop_path": "/1RejXo8s6ot7ZbrgR8J16DVaaTi.jpg",
-   "vote_average": 6.2,
-   "vote_count": 69,
+   "name": "Quarterback",
+   "year": "2023",
+   "overview": "Follow the bruised bodies, soul-crushing fumbles, agonizing losses, and pure joy of three NFL quarterbacks during one season.",
+   "poster_path": "/bKdElEIyuwrbdochxCXwlaUBFaR.jpg",
+   "backdrop_path": "/ykz2UQqagUVnUQbQPKON8zsS7N.jpg",
+   "vote_average": 8.0,
+   "vote_count": 45,
    "genres": [
-    "Drama",
-    "Mystery",
-    "Crime"
+    "Documentary"
    ],
    "sources": [
-    "A Good Girl's Guide to Murder",
-    "Cape Fear",
-    "I Will Find You",
-    "Tell Me Lies",
-    "The Witness",
-    "Tracker",
-    "You"
+    "Bring Me the Beauties: A Model Cult",
+    "Capturing Their Killer: The Girls on the High Bridge",
+    "Chimp Crazy",
+    "Fit for TV: The Reality of the Biggest Loser",
+    "Signs of a Psychopath",
+    "The Pike County Murders: A Family Massacre",
+    "Unsolved History",
+    "Wild Crime"
    ],
-   "tmdb_url": "https://www.themoviedb.org/tv/108181",
-   "imdb_url": "https://www.imdb.com/title/tt31937954/"
+   "tmdb_url": "https://www.themoviedb.org/tv/220998",
+   "imdb_url": "https://www.imdb.com/title/tt26777035/"
   }
  ]
 }
